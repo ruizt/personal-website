@@ -88,7 +88,7 @@ A clever solution is to constrain the linear coefficients $\beta_1, \beta_2, \do
 This produces a model like
 
 $$
-\mathbb{E}Y = \beta_0 + 0 X_1 + \beta_2 X_2 + \cdots + 0 X_p
+\mathbb{E}Y = \beta_0 + \color{red}{0 X_1} + \beta_2 X_2 + \cdots + \color{red}{0 X_p}
 $$
 
 and thereby performs 'automatic' subset selection.

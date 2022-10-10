@@ -60,7 +60,7 @@
     "href": "presentations/f22-pstat5h.html#regularization",
     "title": "PSTAT 5H Guest Lecture",
     "section": "Regularization",
-    "text": "Regularization\nA clever solution is to constrain the linear coefficients \\(\\beta_1, \\beta_2, \\dots, \\beta_p\\) using a sparsity-inducing constraint: a condition that requires some number of \\(\\beta_j\\)’s to be set to zero when the values are estimated.\n\nThis produces a model like\n\\[\n\\mathbb{E}Y = \\beta_0 + 0 X_1 + \\beta_2 X_2 + \\cdots + 0 X_p\n\\]\nand thereby performs ‘automatic’ subset selection."
+    "text": "Regularization\nA clever solution is to constrain the linear coefficients \\(\\beta_1, \\beta_2, \\dots, \\beta_p\\) using a sparsity-inducing constraint: a condition that requires some number of \\(\\beta_j\\)’s to be set to zero when the values are estimated.\n\nThis produces a model like\n\\[\n\\mathbb{E}Y = \\beta_0 + \\color{red}{0 X_1} + \\beta_2 X_2 + \\cdots + \\color{red}{0 X_p}\n\\]\nand thereby performs ‘automatic’ subset selection."
   },
   {
     "objectID": "presentations/f22-pstat5h.html#sparsity",
