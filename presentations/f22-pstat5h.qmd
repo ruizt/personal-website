@@ -61,7 +61,7 @@ $$
 
 For example, with a single predictor:
 
-![Figure from Tukey (1977).](img/tukey-eda-births-4.png)
+![Figure from Tukey (1977).](img/tukey-eda-births-4.jpg)
 
 ## In higher dimensions
 
@@ -120,7 +120,7 @@ However, this tends to over-select (too many variables).
 
 The same techniques can recover networks from time series:
 
-![](img/var-graph.png){fig-align="center"}
+![](img/var-graph.jpg){fig-align="center"}
 
 -   network describes evolution in time
 
