@@ -1,0 +1,240 @@
+---
+title: "PSTAT 5H Guest Lecture"
+subtitle: "Research overview and capstones in data science"
+author: "Trevor Ruiz"
+date: "October 10, 2022"
+editor: visual
+format:
+  revealjs: 
+    incremental: true
+    slide-number: true
+---
+
+## About me
+
+::: columns
+::: {.column width="25%"}
+![5 ball cascade at 2016 Portland Juggling Festival](img/pjf16.jpg){fig-align="center"}
+:::
+
+::: {.column width="75%"}
+Quick facts:
+
+-   born in Oregon, raised in Maryland;
+-   B.A. in Philosophy
+-   M.S. and Ph.D. in Statistics;
+-   Visiting Assistant Professor at UCSB;
+-   have a 2yo cat named Mona.
+:::
+:::
+
+## Outline
+
+Today I'll discuss:
+
+-   my research interests;
+-   data science capstones at UCSB.
+
+. . .
+
+Please feel free to contact me: [tdr\@ucsb.edu](mailto:tdr@ucsb.edu).
+
+# Model selection & network recovery
+
+## Model selection
+
+***Model selection*** refers to choosing one of several candidate models for a set of data.
+
+-   have $K$ candidate models $\{M_1, M_2, \dots, M_K\}$
+
+-   goal is to select a 'best' model $M^* \in \{M_1, M_2, \dots, M_K\}$
+
+## Linear models {.scrollable}
+
+A ***linear model*** says that the mean of a variable of interest $Y$ is linear in $p$ predictors $X_1, \dots, X_p$:
+
+$$
+\mathbb{E}Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_p X_p
+$$
+
+. . .
+
+For example, with a single predictor:
+
+![Figure from Tukey (1977).](img/tukey-eda-births-4.png)
+
+## In higher dimensions
+
+When $p > 1$ , the linear model describes the mean of $Y$ as lying on a plane in $p$-dimensional space.
+
+. . .
+
+To fit the model to data, one needs at least $p + 1$ data points.
+
+## Subset selection
+
+The classical model selection problem is ***subset selection*** or ***variable selection*** in the linear model.
+
+-   choose a subset $S \subset \{X_1, \dots, X_p\}$ that gives the 'best' linear model
+-   in other words, choose the best collection of predictors
+-   $2^p$ possible choices
+
+## Regularization
+
+A clever solution is to constrain the linear coefficients $\beta_1, \beta_2, \dots, \beta_p$ using a ***sparsity-inducing constraint***: a condition that requires some number of $\beta_j$'s to be set to zero when the values are estimated.
+
+. . .
+
+This produces a model like
+
+$$
+\mathbb{E}Y = \beta_0 + 0 X_1 + \beta_2 X_2 + \cdots + 0 X_p
+$$
+
+and thereby performs 'automatic' subset selection.
+
+## Sparsity
+
+The mathematical form of the constraint includes an adjustable term $\lambda$ that controls the strength of the constraint.
+
+-   higher $\lambda$ ➜ stronger constraint ➜ fewer variables selected
+-   lower $\lambda$ ➜ weaker constraint ➜ more variable selected
+-   variable subsets are nested with $\lambda$ : if $\lambda_1 > \lambda_2$ then $S_{\lambda_1} \subset S_{\lambda_2}$
+
+. . .
+
+Think of $\lambda$ as a volume knob that controls how many variables are selected.
+
+## Model selection strategy
+
+The 'traditional' approach to selection using regularization is this:
+
+1.  Use regularization for a sequence of $\lambda_1 < \lambda_2 < \cdots < \lambda_K$ to obtain candidate linear models $M_1 \supset M_2 \supset \cdots \supset M_K$
+2.  Choose the candidate $M^* \in \{M_1, \dots, M_K\}$ that gives the best predictions
+
+. . .
+
+However, this tends to over-select (too many variables).
+
+## Network recovery
+
+The same techniques can recover networks from time series:
+
+![](img/var-graph.png){fig-align="center"}
+
+-   network describes evolution in time
+
+-   sparse because there are few connections
+
+## Innovations
+
+I work on methodology for improved selection. So far I've used two 'tricks' in combination:
+
+1.  computationally intensive approach: subsample data and do many repetitions to find 'stable' subsets
+2.  aggregation: combine multiple models instead of selecting just one
+
+. . .
+
+Benefits:
+
+-   sparser networks with comparable predictive power
+
+-   finer control over selection behavior using algorithm parameters
+
+## Illustration
+
+![Example application to S&P500 closes over a 2 year period. Benchmark method at left; aggregation/subsampling method at right.](img/fig2.png)
+
+## Applications
+
+I'm interested in applications in:
+
+-   (ecology) identifying ecological interaction networks
+
+-   (epidemiology) modeling epidemic cascades through transmission networks
+
+# Data science capstones
+
+## About the program
+
+Data science capstones were launched at UCSB in 2020 as part of an NSF-supported initiative to:
+
+-   establish pathways for data science training through coursework and real-world projects;
+
+-   equip students with skills necessary for pursuing effective professional careers in the field.
+
+## Data science courses at UCSB {.scrollable}
+
+::: panel-tabset
+### Introductory
+
+CMPSC5A-B Introduction to data science "DS1" and "DS2"
+
+-   Beginner-level data science course
+
+-   Intro to inferential and computational thinking
+
+-   broadly accessible with no prerequisites
+
+### Intermediate
+
+PSTAT100 Data science concepts and analysis, "DS3"
+
+-   Intermediate-level data science course
+
+-   Data wrangling, exploratory analysis, data visualization, and basic statistical modeling
+
+-   prerequisites: linear algebra (MTH4A); programming (CS9/16); intro math stat (PSTAT120B)
+
+-   CMPSC5B acceptable alternative prerequisite
+
+### Advanced
+
+PSTAT197A Introduction to research skills / Capstone preparation
+
+-   Intermediate-advanced data science course
+
+-   Collaborative coding, mini projects, and topics in data science: predictive modeling, deep learning, natural language processing, correlated data
+
+-   Prerequisites: linear algebra, programming, intro stat, regression
+:::
+
+## Data science capstones
+
+-   PSTAT197A capstone preparation \[[F22 course site](http://pstat197.github.io/pstat197a)\]
+
+-   PSTAT197B-C project experience \[[past projects](https://centralcoastdatascience.org/projects)\]
+
+    -   weekly seminar
+
+    -   team projects in groups of \~5
+
+    -   projects supervised by an industry or lab partner and a PSTAT or CS graduate student or faculty member
+
+## Spring showcase
+
+We host a poster showcase in spring. Consider attending to talk to current students!
+
+![2022 DS capstone showcase.](img/poster1.jpg){alt="2022 DS capstone showcase."}
+
+## Example projects
+
+-   predictors of stress in healthcare workers from wearable device data \[[poster](https://centralcoastdatascience.org/sites/default/files/2022-06/evidation1-poster.pdf)\]
+
+-   neurodegeneration from single-cell RNA-seq data \[[poster](https://centralcoastdatascience.org/sites/default/files/2022-06/nri-poster.pdf)\]
+
+-   model compression for deep learning \[[poster](https://centralcoastdatascience.org/sites/default/files/2022-06/pwc-poster.pdf)\]
+
+-   predicting web fraud claims using NLP \[[poster](https://centralcoastdatascience.org/sites/default/files/2022-06/carpedata-poster.pdf)\]
+
+## Participation
+
+-   Prerequisites: intro stat; some programming experience; regression.
+
+    -   For the PSTAT major: PSTAT120B, PSTAT126
+
+    -   For other majors: consider CMPSC5A-B and PSTAT100, but equivalent preparation acceptable
+
+-   Target audience for capstones are juniors and seniors; students from other (non-PSTAT) disciplines are highly encouraged to participate.
+
+-   Applications open in spring term on the [data science initiative website](https://datascience.ucsb.edu/instruction); can contact PSTAT peer advisors as well. Apply early!

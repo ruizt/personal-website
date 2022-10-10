@@ -12,5 +12,138 @@
     "title": "ruizt.github.io",
     "section": "",
     "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#about-me",
+    "href": "presentations/f22-pstat5h.html#about-me",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "About me",
+    "text": "About me\n\n\n\n\n\n5 ball cascade at 2016 Portland Juggling Festival\n\n\n\nQuick facts:\n\nborn in Oregon, raised in Maryland;\nB.A. in Philosophy\nM.S. and Ph.D. in Statistics;\nVisiting Assistant Professor at UCSB;\nhave a 2yo cat named Mona."
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#outline",
+    "href": "presentations/f22-pstat5h.html#outline",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Outline",
+    "text": "Outline\nToday I’ll discuss:\n\nmy research interests;\ndata science capstones at UCSB.\n\n\nPlease feel free to contact me: tdr@ucsb.edu."
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#model-selection",
+    "href": "presentations/f22-pstat5h.html#model-selection",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Model selection",
+    "text": "Model selection\nModel selection refers to choosing one of several candidate models for a set of data.\n\nhave \\(K\\) candidate models \\(\\{M_1, M_2, \\dots, M_K\\}\\)\ngoal is to select a ‘best’ model \\(M^* \\in \\{M_1, M_2, \\dots, M_K\\}\\)"
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#linear-models",
+    "href": "presentations/f22-pstat5h.html#linear-models",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Linear models",
+    "text": "Linear models\nA linear model says that the mean of a variable of interest \\(Y\\) is linear in \\(p\\) predictors \\(X_1, \\dots, X_p\\):\n\\[\n\\mathbb{E}Y = \\beta_0 + \\beta_1 X_1 + \\beta_2 X_2 + \\dots + \\beta_p X_p\n\\]\n\nFor example, with a single predictor:\n\n\n\nFigure from Tukey (1977)."
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#in-higher-dimensions",
+    "href": "presentations/f22-pstat5h.html#in-higher-dimensions",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "In higher dimensions",
+    "text": "In higher dimensions\nWhen \\(p > 1\\) , the linear model describes the mean of \\(Y\\) as lying on a plane in \\(p\\)-dimensional space.\n\nTo fit the model to data, one needs at least \\(p + 1\\) data points."
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#subset-selection",
+    "href": "presentations/f22-pstat5h.html#subset-selection",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Subset selection",
+    "text": "Subset selection\nThe classical model selection problem is subset selection or variable selection in the linear model.\n\nchoose a subset \\(S \\subset \\{X_1, \\dots, X_p\\}\\) that gives the ‘best’ linear model\nin other words, choose the best collection of predictors\n\\(2^p\\) possible choices"
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#regularization",
+    "href": "presentations/f22-pstat5h.html#regularization",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Regularization",
+    "text": "Regularization\nA clever solution is to constrain the linear coefficients \\(\\beta_1, \\beta_2, \\dots, \\beta_p\\) using a sparsity-inducing constraint: a condition that requires some number of \\(\\beta_j\\)’s to be set to zero when the values are estimated.\n\nThis produces a model like\n\\[\n\\mathbb{E}Y = \\beta_0 + 0 X_1 + \\beta_2 X_2 + \\cdots + 0 X_p\n\\]\nand thereby performs ‘automatic’ subset selection."
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#sparsity",
+    "href": "presentations/f22-pstat5h.html#sparsity",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Sparsity",
+    "text": "Sparsity\nThe mathematical form of the constraint includes an adjustable term \\(\\lambda\\) that controls the strength of the constraint.\n\nhigher \\(\\lambda\\) ➜ stronger constraint ➜ fewer variables selected\nlower \\(\\lambda\\) ➜ weaker constraint ➜ more variable selected\nvariable subsets are nested with \\(\\lambda\\) : if \\(\\lambda_1 > \\lambda_2\\) then \\(S_{\\lambda_1} \\subset S_{\\lambda_2}\\)\n\n\nThink of \\(\\lambda\\) as a volume knob that controls how many variables are selected."
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#model-selection-strategy",
+    "href": "presentations/f22-pstat5h.html#model-selection-strategy",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Model selection strategy",
+    "text": "Model selection strategy\nThe ‘traditional’ approach to selection using regularization is this:\n\nUse regularization for a sequence of \\(\\lambda_1 < \\lambda_2 < \\cdots < \\lambda_K\\) to obtain candidate linear models \\(M_1 \\supset M_2 \\supset \\cdots \\supset M_K\\)\nChoose the candidate \\(M^* \\in \\{M_1, \\dots, M_K\\}\\) that gives the best predictions\n\n\nHowever, this tends to over-select (too many variables)."
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#network-recovery",
+    "href": "presentations/f22-pstat5h.html#network-recovery",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Network recovery",
+    "text": "Network recovery\nThe same techniques can recover networks from time series:\n\n\nnetwork describes evolution in time\nsparse because there are few connections"
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#innovations",
+    "href": "presentations/f22-pstat5h.html#innovations",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Innovations",
+    "text": "Innovations\nI work on methodology for improved selection. So far I’ve used two ‘tricks’ in combination:\n\ncomputationally intensive approach: subsample data and do many repetitions to find ‘stable’ subsets\naggregation: combine multiple models instead of selecting just one\n\n\nBenefits:\n\nsparser networks with comparable predictive power\nfiner control over selection behavior using algorithm parameters"
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#illustration",
+    "href": "presentations/f22-pstat5h.html#illustration",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Illustration",
+    "text": "Illustration\n\nExample application to S&P500 closes over a 2 year period. Benchmark method at left; aggregation/subsampling method at right."
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#applications",
+    "href": "presentations/f22-pstat5h.html#applications",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Applications",
+    "text": "Applications\nI’m interested in applications in:\n\n(ecology) identifying ecological interaction networks\n(epidemiology) modeling epidemic cascades through transmission networks"
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#about-the-program",
+    "href": "presentations/f22-pstat5h.html#about-the-program",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "About the program",
+    "text": "About the program\nData science capstones were launched at UCSB in 2020 as part of an NSF-supported initiative to:\n\nestablish pathways for data science training through coursework and real-world projects;\nequip students with skills necessary for pursuing effective professional careers in the field."
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#data-science-courses-at-ucsb",
+    "href": "presentations/f22-pstat5h.html#data-science-courses-at-ucsb",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Data science courses at UCSB",
+    "text": "Data science courses at UCSB\n\nIntroductoryIntermediateAdvanced\n\n\nCMPSC5A-B Introduction to data science “DS1” and “DS2”\n\nBeginner-level data science course\nIntro to inferential and computational thinking\nbroadly accessible with no prerequisites\n\n\n\nPSTAT100 Data science concepts and analysis, “DS3”\n\nIntermediate-level data science course\nData wrangling, exploratory analysis, data visualization, and basic statistical modeling\nprerequisites: linear algebra (MTH4A); programming (CS9/16); intro math stat (PSTAT120B)\nCMPSC5B acceptable alternative prerequisite\n\n\n\nPSTAT197A Introduction to research skills / Capstone preparation\n\nIntermediate-advanced data science course\nCollaborative coding, mini projects, and topics in data science: predictive modeling, deep learning, natural language processing, correlated data\nPrerequisites: linear algebra, programming, intro stat, regression"
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#data-science-capstones-1",
+    "href": "presentations/f22-pstat5h.html#data-science-capstones-1",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Data science capstones",
+    "text": "Data science capstones\n\nPSTAT197A capstone preparation [F22 course site]\nPSTAT197B-C project experience [past projects]\n\nweekly seminar\nteam projects in groups of ~5\nprojects supervised by an industry or lab partner and a PSTAT or CS graduate student or faculty member"
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#spring-showcase",
+    "href": "presentations/f22-pstat5h.html#spring-showcase",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Spring showcase",
+    "text": "Spring showcase\nWe host a poster showcase in spring. Consider attending to talk to current students!\n\n2022 DS capstone showcase."
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#example-projects",
+    "href": "presentations/f22-pstat5h.html#example-projects",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Example projects",
+    "text": "Example projects\n\npredictors of stress in healthcare workers from wearable device data [poster]\nneurodegeneration from single-cell RNA-seq data [poster]\nmodel compression for deep learning [poster]\npredicting web fraud claims using NLP [poster]"
+  },
+  {
+    "objectID": "presentations/f22-pstat5h.html#participation",
+    "href": "presentations/f22-pstat5h.html#participation",
+    "title": "PSTAT 5H Guest Lecture",
+    "section": "Participation",
+    "text": "Participation\n\nPrerequisites: intro stat; some programming experience; regression.\n\nFor the PSTAT major: PSTAT120B, PSTAT126\nFor other majors: consider CMPSC5A-B and PSTAT100, but equivalent preparation acceptable\n\nTarget audience for capstones are juniors and seniors; students from other (non-PSTAT) disciplines are highly encouraged to participate.\nApplications open in spring term on the data science initiative website; can contact PSTAT peer advisors as well. Apply early!"
   }
 ]
