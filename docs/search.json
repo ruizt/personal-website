@@ -145,5 +145,229 @@
     "title": "PSTAT 5H Guest Lecture",
     "section": "Participation",
     "text": "Participation\n\nPrerequisites: intro stat; some programming experience; regression.\n\nFor the PSTAT major: PSTAT120B, PSTAT126\nFor other majors: consider CMPSC5A-B and PSTAT100, but equivalent preparation acceptable\n\nTarget audience for capstones are juniors and seniors; students from other (non-PSTAT) disciplines are highly encouraged to participate.\nApplications open in spring term on the data science initiative website; can contact PSTAT peer advisors as well. Apply early!"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#audience",
+    "href": "presentations/cpslo-demo.html#audience",
+    "title": "Interval estimation",
+    "section": "Audience",
+    "text": "Audience"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#previous-lessons",
+    "href": "presentations/cpslo-demo.html#previous-lessons",
+    "title": "Interval estimation",
+    "section": "Previous lessons",
+    "text": "Previous lessons"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#todays-goal",
+    "href": "presentations/cpslo-demo.html#todays-goal",
+    "title": "Interval estimation",
+    "section": "Today’s goal",
+    "text": "Today’s goal"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#motivating-example",
+    "href": "presentations/cpslo-demo.html#motivating-example",
+    "title": "Interval estimation",
+    "section": "Motivating example",
+    "text": "Motivating example\n\n\n\nQuestion\n\n\nHow hard is it to juggle \\(K\\) objects?\n\n\n\n\nIf the general population can typically manage at most \\(\\theta\\) objects:\n\nlarger numbers \\(K >\\theta\\) are hard\nsmaller numbers \\(K < \\theta\\) are easy"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#whats-typical",
+    "href": "presentations/cpslo-demo.html#whats-typical",
+    "title": "Interval estimation",
+    "section": "What’s typical?",
+    "text": "What’s typical?\nA few common ways to define the “typical number”:\n\n(\\(\\theta\\) = population mean) the average number the general population can juggle\n(\\(\\theta\\) = population median) the ‘middle’ number the general population can juggle\n\n\n\n\n\nTerminology\n\n\nThese are examples of different population parameters."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#estimation",
+    "href": "presentations/cpslo-demo.html#estimation",
+    "title": "Interval estimation",
+    "section": "Estimation",
+    "text": "Estimation\nIt’s cumbersome, if not impossible (and not to mention pointless), to find and ask every human being how many objects they can juggle.\n\nSo practically speaking, \\(\\theta\\) cannot be determined exactly; instead it is estimated from a sample of people representative of the general population.\n\na point estimate is a single value – one “best guess”\nan interval estimate is a range of values – many plausible options"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#terminology-and-notation",
+    "href": "presentations/cpslo-demo.html#terminology-and-notation",
+    "title": "Interval estimation",
+    "section": "Terminology and notation",
+    "text": "Terminology and notation\n\n\\(f(x)\\) is the distribution of population values\n\n\n\n\\(\\theta\\) is a population parameter of interest, i.e., an “estimand”\n\\(X_1, \\dots, X_n\\) are observations for a random sample of \\(n\\) individuals\n\\(\\hat{\\theta}\\) is an “estimator” of the population parameter"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#illustration",
+    "href": "presentations/cpslo-demo.html#illustration",
+    "title": "Interval estimation",
+    "section": "Illustration",
+    "text": "Illustration"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#review-point-estimate",
+    "href": "presentations/cpslo-demo.html#review-point-estimate",
+    "title": "Interval estimation",
+    "section": "Review: point estimate",
+    "text": "Review: point estimate\nUsually \\(\\theta\\) is a function of \\(f(x)\\) and \\(\\hat{\\theta}\\) is simply the sample analogue."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#but-it-could-have-been-different",
+    "href": "presentations/cpslo-demo.html#but-it-could-have-been-different",
+    "title": "Interval estimation",
+    "section": "… but it could have been different?",
+    "text": "… but it could have been different?\n\nPoint estimates for the population mean (still \\(\\theta = 1.5\\)) from six distinct samples."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#review-sampling-variability",
+    "href": "presentations/cpslo-demo.html#review-sampling-variability",
+    "title": "Interval estimation",
+    "section": "Review: sampling variability",
+    "text": "Review: sampling variability"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#helpful-and-unhelpful-intervals",
+    "href": "presentations/cpslo-demo.html#helpful-and-unhelpful-intervals",
+    "title": "Interval estimation",
+    "section": "Helpful and unhelpful intervals",
+    "text": "Helpful and unhelpful intervals\nIf we say that the average number of objects the general population can juggle is between 0 and 10 objects…\n\nalmost certainly correct\nbut not informative\n\n\nIf on the other hand we say 1.3-1.4…\n\ninformative estimate\nbut more likely to be mistaken\n\n\n\nSo just how wide should we make the interval?"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#new-concepts-coverage",
+    "href": "presentations/cpslo-demo.html#new-concepts-coverage",
+    "title": "Interval estimation",
+    "section": "New concepts: coverage",
+    "text": "New concepts: coverage"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#coverage-is-a-design-principle",
+    "href": "presentations/cpslo-demo.html#coverage-is-a-design-principle",
+    "title": "Interval estimation",
+    "section": "Coverage is a design principle",
+    "text": "Coverage is a design principle"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#not-something-you-can-check-in-practice",
+    "href": "presentations/cpslo-demo.html#not-something-you-can-check-in-practice",
+    "title": "Interval estimation",
+    "section": "… not something you can check in practice",
+    "text": "… not something you can check in practice"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#quick-survey",
+    "href": "presentations/cpslo-demo.html#quick-survey",
+    "title": "Interval estimation",
+    "section": "Quick survey",
+    "text": "Quick survey\n\n\nShow of hands, how many of you can juggle…\n\n0 but no more\n1 but no more\n2 but no more\n3 but no more\n4 +\n\n\n\n\n\nCaveat\n\n\nThis is a convenience sample – a collection of easy-to-obtain observations.\n\ncan’t assume it’s representative of any broader population\nso sample statistics are not reliable estimates\n\n\n\n\n\n\n\nLet’s imagine we can collect a representative sample."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#population-quantities",
+    "href": "presentations/cpslo-demo.html#population-quantities",
+    "title": "Interval estimation",
+    "section": "Population quantities",
+    "text": "Population quantities\n\n\\(X\\) is the variable of interest\n\ne.g., greatest number of objects a person can juggle\nvaries randomly among individuals\n\n\\(f(x)\\) is the population density of values of \\(X\\)\n\nprecise interpretation depends on whether \\(X\\) is discrete or continuous\nroughly: frequency of the value \\(x\\) among the population\n\n\\(\\theta\\) is a population parameter of interest\n\ne.g., average number of objects a person can juggle"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#sample-quantities",
+    "href": "presentations/cpslo-demo.html#sample-quantities",
+    "title": "Interval estimation",
+    "section": "Sample quantities",
+    "text": "Sample quantities\n\n\\(X_1, \\dots, X_n\\) are observations for a random sample of \\(n\\) individuals\n\\(\\hat{\\theta}\\) is an estimator of the population parameter"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#review-point-estimation",
+    "href": "presentations/cpslo-demo.html#review-point-estimation",
+    "title": "Interval estimation",
+    "section": "Review: point estimation",
+    "text": "Review: point estimation\nOften \\(\\hat{\\theta}\\) is simply the sample analogue of \\(\\theta\\).\n\nEstimate of the population mean (left) using the sample mean (right) of 50 independent observations."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#notation",
+    "href": "presentations/cpslo-demo.html#notation",
+    "title": "Interval estimation",
+    "section": "Notation",
+    "text": "Notation\n\n\\(X\\) is the variable of interest\n\ne.g., greatest number of objects a person can juggle\n\n\\(f(x)\\) is the population density of values of \\(X\\)\n\nprecise interpretation depends on whether \\(X\\) is discrete or continuous, but roughly: frequency of the value \\(x\\) among the population\n\n\\(\\theta\\) is a population parameter of interest\n\\(X_1, \\dots, X_n\\) are observations for a random sample\n\\(\\hat{\\theta}\\) is an estimator of the population parameter"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#interval-estimates",
+    "href": "presentations/cpslo-demo.html#interval-estimates",
+    "title": "Interval estimation",
+    "section": "Interval estimates",
+    "text": "Interval estimates\n\n\n\nConcept\n\n\nAn interval estimate is a range of values for a population parameter.\n\n\n\n\n\n\n\n\n\nTwo hypothetical intervals – interval 1 covers the parameter and interval 2 misses."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#sampling-variation",
+    "href": "presentations/cpslo-demo.html#sampling-variation",
+    "title": "Interval estimation",
+    "section": "Sampling variation",
+    "text": "Sampling variation\nEven though estimates are pretty similar (and also close to \\(\\theta\\)!) for most samples, they do move around a little.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIdea\n\n\nWhat if instead of a single best guess, we calculated a range based on how much we sampling variation we expect in the point estimate?"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#constructing-intervals",
+    "href": "presentations/cpslo-demo.html#constructing-intervals",
+    "title": "Interval estimation",
+    "section": "Constructing intervals",
+    "text": "Constructing intervals\nA general method of construction for an interval estimate is:\n\nstart with a point estimate \\(\\hat{\\theta}\\)\nbased on its sampling distribution, choose an appropriate \\(a, b\\) and compute\n\\[\n(\\hat{\\theta} - a, \\hat{\\theta} + b)\n\\]\n\n\n\n\n\nTerminology\n\n\nIf \\(a = b\\), we say the interval is symmetric."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#interval-coverage",
+    "href": "presentations/cpslo-demo.html#interval-coverage",
+    "title": "Interval estimation",
+    "section": "Interval coverage",
+    "text": "Interval coverage\nWe should be able to say how often a particular method of interval estimation produces a ‘correct’ result. This is known as “coverage”.\n\n\n\n\nKey concept\n\n\nThe coverage of an interval estimator is the proportion of samples for which the interval covers the population parameter.\n\n\n\n\n\nSo if an interval has a coverage of 0.86, that means that the method by which it was constructed produces a ‘correct’ result (i.e., covers \\(\\theta\\)) for 86% of samples.\n\n\n\n\n\nTerminology\n\n\nStatisticians equate coverage with the degree of confidence they have in their estimates: if an interval covers 86% of samples, then we can be 86% confident it is correct. For this reason the coverage is often called a confidence level."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#coverage",
+    "href": "presentations/cpslo-demo.html#coverage",
+    "title": "Interval estimation",
+    "section": "Coverage",
+    "text": "Coverage\nWe should be able to say how often a particular method of interval estimation produces a ‘correct’ result. This is known as “coverage”.\n\n\n\n\nKey concept\n\n\nThe coverage of an interval estimator is the proportion of samples for which the interval covers the population parameter.\n\n\n\n\n\nSo if an interval has a coverage of 0.86, that means that the method by which it was constructed produces a ‘correct’ result (i.e., covers \\(\\theta\\)) for 86% of samples."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#interval-for-the-mean",
+    "href": "presentations/cpslo-demo.html#interval-for-the-mean",
+    "title": "Interval estimation",
+    "section": "Interval for the mean",
+    "text": "Interval for the mean\n\n\n\nProblem statement\n\n\nBased on the sample mean \\(\\hat{\\theta}\\), what symmetric interval for the population mean \\(\\theta\\) achieves a coverage of \\(1 - \\alpha\\)?\n\n\n\n\nThe solution is based on the \\(T\\) statistic \\(T(\\hat{\\theta}) = \\frac{\\hat{\\theta} - \\theta}{SE(\\hat{\\theta})}\\).\n\n\\(T(\\hat{\\theta})\\) has a \\(t_{n - 1}\\) sampling distribution (approximately)\n\\(P(-t^{\\alpha/2} < T(\\hat{\\theta}) < t^{\\alpha/2}) = 1 - \\alpha\\) for \\(t\\)-quantiles \\(t^{\\alpha/2}\\)"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#interval-interpretation",
+    "href": "presentations/cpslo-demo.html#interval-interpretation",
+    "title": "Interval estimation",
+    "section": "Interval interpretation",
+    "text": "Interval interpretation\n\n\n\nTerminology\n\n\nStatisticians equate coverage with the degree of confidence they have in their estimates: if an interval covers 86% of samples, then we can be 86% confident it is correct.\nFor this reason interval coverage is more commonly called a confidence level.\n\n\n\nThe standard interval interpretation is:\n\nWith \\(100\\times (1 - \\alpha)\\%\\) confidence, the population mean is estimated to be between \\(\\hat{\\theta}_{LO}\\) and \\(\\hat{\\theta}_{HI}\\)."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#a-design-principle-coverage",
+    "href": "presentations/cpslo-demo.html#a-design-principle-coverage",
+    "title": "Interval estimation",
+    "section": "A design principle: coverage",
+    "text": "A design principle: coverage\nWe should be able to say how often a particular method of interval estimation produces a ‘correct’ result. This is known as “coverage”.\n\n\n\n\nKey concept\n\n\nThe coverage of an interval estimator is the proportion of samples for which the interval covers the population parameter.\n\n\n\n\n\nSo if an interval has a coverage of 0.86, that means that the method by which it was constructed produces a ‘correct’ result (i.e., covers \\(\\theta\\)) for 86% of samples."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#interval-for-the-mean-1",
+    "href": "presentations/cpslo-demo.html#interval-for-the-mean-1",
+    "title": "Interval estimation",
+    "section": "Interval for the mean",
+    "text": "Interval for the mean\nThe event that the \\(T\\) statistic is between two quantiles is equivalent to the event that the population parameter is covered by the endpoints:\n\\[\n-t^{\\alpha/2} < \\underbrace{\\frac{\\hat{\\theta} - \\theta}{SE(\\hat{\\theta})}}_{T(\\hat{\\theta})} < t^{\\alpha/2}\n\\quad\\Longleftrightarrow\\quad\n\\underbrace{\\hat{\\theta} - t^{\\alpha/2} SE(\\hat{\\theta})}_{\\hat{\\theta} - a} < \\theta < \\underbrace{\\hat{\\theta} + t^{\\alpha/2} SE(\\hat{\\theta})}_{\\hat{\\theta} + b}\n\\]\n\nSo the probabilities are also equal and :\n\\[\nP\\left(\\hat{\\theta} - t^{\\alpha/2} SE(\\hat{\\theta}) < \\theta < \\hat{\\theta} + t^{\\alpha/2} SE(\\hat{\\theta})\\right) = 1 - \\alpha\n\\]\n\n\nIn other words, the interval \\(\\hat{\\theta} \\pm t^{\\alpha/2}SE(\\hat{\\theta})\\) covers \\(\\theta\\) with probability \\(1 - \\alpha\\)."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#calculating-intervals",
+    "href": "presentations/cpslo-demo.html#calculating-intervals",
+    "title": "Interval estimation",
+    "section": "Calculating intervals",
+    "text": "Calculating intervals\n\n\n\nThese intervals are easy to compute:\n\nCalculate the sample mean \\(\\hat{\\theta}\\)and the sample variance \\(S^2\\)\n\nc(mean(x), var(x))\n\n[1] 1.760000 1.777959\n\n\nCompute \\(SE(\\hat{\\theta}) = \\sqrt{\\frac{S^2}{n}}\\)\n\nsqrt(var(x)/50)\n\n[1] 0.1885714\n\n\nFind the \\(t^{\\alpha/2}\\) quantile (with \\(n - 1\\) degrees of freedom)\n\nqt(0.025, df = 49, lower.tail = F)\n\n[1] 2.009575\n\n\nCalculate the interval\n\nc(1.76 - 2.01*0.189, 1.76 + 2.01*0.189)\n\n[1] 1.38011 2.13989"
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#comparing-coverages",
+    "href": "presentations/cpslo-demo.html#comparing-coverages",
+    "title": "Interval estimation",
+    "section": "Comparing coverages",
+    "text": "Comparing coverages\n\nCalculated intervals with two coverages – 50% intervals (left) and 80% intervals(right)."
+  },
+  {
+    "objectID": "presentations/cpslo-demo.html#incorrect-interpretation",
+    "href": "presentations/cpslo-demo.html#incorrect-interpretation",
+    "title": "Interval estimation",
+    "section": "Incorrect interpretation",
+    "text": "Incorrect interpretation\n\n\n\nCommon mistake\n\n\nIt is not accurate to say \\(\\theta\\) is between the endpoints with probability \\(1 - \\alpha\\)."
   }
 ]
