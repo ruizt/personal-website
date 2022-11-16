@@ -17,7 +17,11 @@ format:
 
 ***Audience:*** undergraduate students taking a first course in statistics.
 
+. . .
+
 ***Possible texts:*** Using R for Introductory Statistics by John Verzani; Introductory Statistics with Randomization and Simulation by Diez *et al.*
+
+. . .
 
 ***Prior sessions:*** we would have already covered...
 
@@ -32,6 +36,22 @@ format:
 # Interval estimation for a population parameter
 
 ## Today's goal
+
+Introduce interval estimation -- estimating a parameter by a *range* of values (*e.g.*, 1.18 -- 2.36) instead of a single value (*e.g.*, 2.21).
+
+. . .
+
+Follow along: [https://ruizt.github.io/cpslo-demo.html](https://ruizt.github.io/cpslo-demo.html)
+
+. . .
+
+Key concepts:
+
+-   interval estimate
+
+-   coverage
+
+-   width and uncertainty
 
 ## Motivating example
 
@@ -115,7 +135,7 @@ These are examples of different ***population parameters***.
 
 -   $\hat{\theta}$ is a ***point estimator*** of the population parameter
 
-## Review: point estimation
+## Point estimation
 
 Often $\hat{\theta}$ is simply the sample analogue of $\theta$: for instance, as we saw before, the sample mean is a point estimator of the population mean.
 
@@ -375,7 +395,7 @@ The ***coverage*** of an interval estimator is the proportion of samples for whi
 
 So if an interval has a coverage of 0.86, that means that the method by which it was constructed produces a 'correct' result (*i.e.,* covers $\theta$) for 86% of samples.
 
-## Interval for the mean
+## Interval for the mean {.smaller}
 
 ::: callout-caution
 ## Problem statement
@@ -423,10 +443,16 @@ In other words, the interval $\hat{\theta} \pm t^{\alpha/2}SE(\hat{\theta})$ cov
 ## Calculating intervals {.smaller}
 
 ```{r}
-#| echo: true
+#| echo: false
 set.seed(111222)
 n <- 50
 x <- rpois(n, lambda = 1.5)
+```
+
+```{r}
+#| echo: true
+
+x
 ```
 
 These intervals are easy to compute:
@@ -519,7 +545,15 @@ It is ***not*** accurate to say $\theta$ is between the endpoints with probabili
 
 Why not? Because $\theta$ is a parameter, not a random variable.
 
-## Interval width
+. . .
+
+$P(1.13 < \theta < 2.21)$ is nonsense, because nothing in $P(\cdot)$ is probabilistic.
+
+. . .
+
+It's easy to get mixed up because $P(\hat{\theta}_{LO} < \theta < \hat{\theta}_{HI})$ *is* well-defined: the endpoints are random functions of data. But as soon as specific numbers are calculated, there's no longer a well-defined probability.
+
+## Interval width {.smaller}
 
 ::: callout-tip
 ## Uncertainty quantification
@@ -615,3 +649,19 @@ tibble(id = paste('sample', 1:nsamp, sep = ' '),
 2.  Constructed from a point estimator and knowledge of its sampling distribution.
 3.  Interval estimators are constructed to achieve a specified *coverage*: proportion of samples for which the interval includes the population parameter.
 4.  Given a fixed coverage, the width of an interval communicates the degree of uncertainty about the estimate.
+
+## Unintended consequences
+
+![](presentations/img/confidence_interval_xkcd.png){fig-align="center"}
+
+## Next time: bootstrapping
+
+Perhaps you thought that estimating the mean number of objects one can juggle is not the best way to determine what's challenging or easy.
+
+-   Why not estimate, *e.g.*, the 95th percentile?
+
+-   There is a sampling distribution for sample quantiles, but it's a bit hairy to work out.
+
+. . .
+
+Bootstrapping provides a theory-free method of interval estimation for arbitrary population parameters.
