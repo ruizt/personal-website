@@ -451,8 +451,7 @@ x <- rpois(n, lambda = 1.5)
 
 ```{r}
 #| echo: true
-
-x
+head(x)
 ```
 
 These intervals are easy to compute:
@@ -642,6 +641,10 @@ tibble(id = paste('sample', 1:nsamp, sep = ' '),
   guides(color = guide_none())
 ```
 :::
+
+## Further exploration {.scrollable}
+
+[https://tdruiz.shinyapps.io/ci-demo/](https://tdruiz.shinyapps.io/ci-demo/)
 
 ## Takeaways
 

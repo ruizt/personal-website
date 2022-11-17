@@ -1,0 +1,13 @@
+name: ci-demo
+title: ci-demo
+username:
+account: tdruiz
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7660955
+bundleId: 6525455
+url: https://tdruiz.shinyapps.io/ci-demo/
+when: 1668701916.56571
+lastSyncTime: 1668701916.56575
+asMultiple: FALSE
+asStatic: FALSE
