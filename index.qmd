@@ -12,7 +12,7 @@ about:
       href: https://github.com/ruizt
 ---
 
-Hello, I'm an (incoming) Assistant Professor in the Statistics Department at Cal Poly, San Luis Obispo. Most of my work is informed by an interest in applications of statistical methods in the sciences. Here you can find information about my teaching and research activity.
+Hello, I'm an incoming Assistant Professor in the Statistics Department at Cal Poly, San Luis Obispo. Most of my work is informed by an interest in applications of statistical methods in the sciences. Here you can find information about my teaching and research activity.
 
 ## Professional appointments
 
@@ -28,8 +28,8 @@ Visiting Assistant Professor \| 2020-2023
 
 **Oregon State University** \| Corvallis, OR
 
-Ph.D. & M.S., Statistics \| 2015-2020
+Ph.D. & M.S. Statistics \| 2015-2020
 
 **Reed College** \| Portland, OR
 
-B.A., Philosophy \| 2007-2011
+B.A. Philosophy \| 2007-2011
