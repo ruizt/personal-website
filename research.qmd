@@ -22,4 +22,4 @@ Agricultural epidemics driven by aerially-dispersed pathogens exhibit strongly a
 
 I worked on a collaboration developing a network approach for modeling a specific pathosystem among hop farms in Western Oregon: disease levels obtained from a census of growing locations along with spatiotemporally-integrated wind intensity along the directions defined by every pair of locations was used to predict disease levels in the subsequent month [@gent2017network; @gent2019prediction]. A closely related collaboration proposed a framework for modeling continental-scale epidemics with multiple epicenters based only on time-of-first-occurrence data from a spatially sparse monitoring network of sentinel growing plots [@ojwang2021general].
 
-### Publications
+### Works cited
