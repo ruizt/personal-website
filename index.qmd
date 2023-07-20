@@ -1,7 +1,35 @@
 ---
-title: "ruizt.github.io"
+title: "Trevor D. Ruiz"
+about:
+  template: trestles
+  image: img/portrait2.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:truiz01@calpoly.edu
+    - icon: github
+      text: Github
+      href: https://github.com/ruizt
 ---
 
-This is a Quarto website.
+Hello, I'm an (incoming) Assistant Professor in the Statistics Department at Cal Poly, San Luis Obispo. Most of my work is informed by an interest in applications of statistical methods in the sciences. Here you can find information about my teaching and research activity.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Professional appointments
+
+**California Polytechnic State University, San Luis Obispo**
+
+Assistant Professor \| 2023-present
+
+**University of California, Santa Barbara**
+
+Visiting Assistant Professor \| 2020-2023
+
+## Education
+
+**Oregon State University** \| Corvallis, OR
+
+Ph.D. & M.S., Statistics \| 2015-2020
+
+**Reed College** \| Portland, OR
+
+B.A., Philosophy \| 2007-2011

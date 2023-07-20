@@ -3,12 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "ruizt.github.io"
+  title: "Trevor D. Ruiz"
+  page-navigation: false
   navbar:
+    # logo: img/portrait1.jpeg
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: About
+      - teaching.qmd
+      - research.qmd
 
 format:
   html:

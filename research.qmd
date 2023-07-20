@@ -1,0 +1,25 @@
+---
+title: "Research"
+editor: visual
+bibliography: refs.bib
+---
+
+### Model selection for high-dimensional time series
+
+From the perspective of practice, high-dimensional time series --- serial observations of a large number of measurements --- can be modeled using methods that essentially reduce to regression techniques. Though highly convenient, the model parametrization for this approach is dense, requiring a minimum of $p^2$ parameters for a $p$-variate time series. Many of these parameters are negligibly small or contribute minimally to model fit; filtering out those parameters at the model fitting stage and selecting a reduced model is a challenge. Standard methods underperform in practice due to dependence in the data.
+
+I have a series of works exploring empirical methods of selecting an appropriate parameter subset based on resampling, $L_1$ regularization, and aggregation of model support sets. Early methods adapted a resampling-based selection approach from the ordinary regression setting more or less directly [@ruiz2019sparse; @ruiz2020sparse] and explored computational scaling on distributed systems [@balasubramanian2018optimizing; @balasubramanian2020scaling]. My dissertation research refined the methodology based on empirical experiments and considered its application to models for count-valued data [@ruiz2020estimation]. Based on these experiments, I proposed a computationally-intensive approach that selects parameters retained with a user-specified minimum frequency across several validation subsamples [@ruiz2023sparse].
+
+### Poisson models for time series of multivariate counts
+
+Conditionally independent Poisson models with an autoregressive mean structure provide a convenient framework for modeling count-valued multivariate time series. These result from regressing the present value of one series on past values of the full multivariate process, one series at a time. Due to the connection with generalized linear models, a log link is often used; but this results in superexponentiation of the mean over time unless parameters are chosen carefully. Nonetheless, alternative link functions often cannot ensure the conditional mean is positive while also allowing for negative serial correlations.
+
+I developed a constraint on the parameter space for the log-linear model based on a simple graphical condition that is sufficient to ensure bounded first and second process moments [@ruiz2022graphical]. Future work might establish necessary and sufficient conditions for the log-linear model, or propose an alternative parametrization that allows both positive and negative serial correlations but avoids the superexponentiation problem.
+
+### Agricultural epidemiology
+
+Agricultural epidemics driven by aerially-dispersed pathogens exhibit strongly anisotropic spread due to varying windspeeds and landscape features, yet covariates that potentially explain patterns of anisotropy are readily available from public data sources. This allows for several approaches to modeling disease spread that explicitly account for anisotropy and potentially improve the efficacy of management interventions.
+
+I worked on a collaboration developing a network approach for modeling a specific pathosystem among hop farms in Western Oregon: disease levels obtained from a census of growing locations along with spatiotemporally-integrated wind intensity along the directions defined by every pair of locations was used to predict disease levels in the subsequent month [@gent2017network; @gent2019prediction]. A closely related collaboration proposed a framework for modeling continental-scale epidemics with multiple epicenters based only on time-of-first-occurrence data from a spatially sparse monitoring network of sentinel growing plots [@ojwang2021general].
+
+### Publications
