@@ -4,11 +4,9 @@ editor: visual
 bibliography: refs.bib
 ---
 
-I'm enthusiastic about supporting undergraduate research. If you're a student and you're interested in research opportunities or have a project idea, or if you're a researcher looking for student collaborators, please feel free to get in touch.
+I'm currently developing project ideas with opportunities for contributions from Cal Poly statistics students. If you're a student and you're interested in research opportunities, or have your own project idea you'd like to pursue, please feel free get in touch.
 
-## Past projects
-
-### Data science capstones
+### Capstone projects
 
 While at UCSB I co/led instruction of a year-long capstone[^1] in 2021-2022 and 2022-2023. The goal of the capstone was to engage undergraduate students in collaborative research. In the two years I oversaw the course we had 28 projects spanning a wide range of domain and industry applications.[^2] I had the good fortune of working with many talented students and dedicated partnering labs and companies, several of whom extended their research efforts in various ways beyond the scope of the class.
 
