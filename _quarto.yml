@@ -5,6 +5,7 @@ project:
 website:
   title: "Trevor D. Ruiz"
   page-navigation: false
+  page-footer: "\u00a9 2023 Trevor Ruiz"
   navbar:
     # logo: img/portrait1.jpeg
     background: light
@@ -14,6 +15,7 @@ website:
         text: About
       - teaching.qmd
       - research.qmd
+      - projects.qmd
 
 format:
   html:
