@@ -4,11 +4,13 @@ editor: visual
 bibliography: refs.bib
 ---
 
-### Model selection for high-dimensional time series
+## High-dimensional time series
 
-From the perspective of practice, high-dimensional time series --- serial observations of a large number of measurements --- can be modeled using methods that essentially reduce to regression techniques. Though highly convenient, the model parametrization for this approach is dense, requiring a minimum of $p^2$ parameters for a $p$-variate time series. Many of these parameters are negligibly small or contribute minimally to model fit; filtering out those parameters at the model fitting stage and selecting a reduced model is a challenge. Standard methods underperform in practice due to dependence in the data.
+### Model selection
 
-I have a series of works exploring empirical methods of selecting an appropriate parameter subset for vector autoregressive models. Early methods adapted a resampling-based approach from the ordinary regression setting more or less directly [@ruiz2020sparse] and explored computational scaling on distributed systems [@balasubramanian2020scaling]. My dissertation research refined the methodology through empirical experiments and considered its application to models for count-valued data [@ruiz2020estimation]. Based on these experiments, I proposed selecting parameters identified with a user-specified minimum frequency across several validation subsamples [@ruiz2023sparse]. This method has applications in estimating causal networks from time series data, such as ecological interaction networks, functional connectivity in the brain, or macroeconomic relationships.
+High-dimensional time series --- serial observations of a large number of measurements --- are often modeled using an autoregressive framework for representing serial dependence within and between series. The model parametrization for this approach is dense, requiring a minimum of $p^2$ parameters for a $p$-variate time series. Many of these parameters are negligibly small or contribute minimally to model fit; yet filtering out those parameters at the model fitting stage and selecting a reduced model is a challenge in practice with finite samples.
+
+I have a series of works exploring empirical methods of selecting an appropriate parameter subset for vector autoregressive models using resampling techniques. Early methods adapted an approach from the ordinary regression setting more or less directly [@ruiz2020sparse] and explored performance when computations on resamples are carried out in parallel on a distributed architecture [@balasubramanian2020scaling]. My dissertation research refined the methodology through empirical experiments and considered its application to models for count-valued data [@ruiz2020estimation]. Based on these experiments, I proposed selecting parameters identified with a user-specified minimum frequency across several validation subsamples [@ruiz2023sparse]. This method has applications in estimating causal networks from time series data, such as ecological interaction networks, functional connectivity in the brain, or macroeconomic relationships.
 
 ### Poisson models for time series of multivariate counts
 
@@ -16,10 +18,12 @@ Poisson mixtures with autoregressive conditional means provide a convenient fram
 
 I developed a constraint on the positive serial correlation structure for the log-linear model that is sufficient to ensure bounded first and second process moments [@ruiz2022graphical]. This has implications for simulation as well as for understanding model limitations. Future work might relax the constraint, establish necessary and sufficient stability conditions for the log-linear model, or propose an alternative parametrization that allows both positive and negative serial correlations but avoids the superexponentiation problem.
 
+## Applications
+
 ### Agricultural epidemiology
 
 Agricultural epidemics driven by aerially-dispersed pathogens exhibit spatially anisotropic patterns of expansion from epicenters due to varying windspeeds and landscape features. Covariates that potentially explain patterns of anisotropy are readily available from public data sources, and thus allow for several approaches to modeling disease spread to potentially aid in identifying effective management interventions.
 
-I worked on collaborations that developed two modeling frameworks. The first was a network approach applied to a specific pathosystem comprising hop farms in Western Oregon: disease levels obtained from a census of growing locations along with spatiotemporally-integrated wind intensity along the directions defined by every pair of locations was used to predict disease levels in the subsequent month using nonlinear generalized regression models \[@gent2019prediction\]. The second was a general framework for modeling continental-scale epidemics with multiple epicenters based only on time-of-first-occurrence data from a spatially sparse monitoring network of sentinel growing plots [@ojwang2021general].
+I worked on collaborations that developed two modeling frameworks. The first was a network approach applied to a specific pathosystem comprising hop farms in Western Oregon: disease levels obtained from a census of growing locations along with spatiotemporally-integrated wind intensity along the directions defined by every pair of locations was used to predict disease levels in the subsequent month using nonlinear generalized regression models [@gent2019prediction]. The second was a general framework for modeling continental-scale epidemics with multiple epicenters based only on time-of-first-occurrence data from a spatially sparse monitoring network of sentinel growing plots [@ojwang2021general].
 
 ### Publications and other works cited
