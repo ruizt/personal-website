@@ -2,6 +2,7 @@
 .Rhistory
 .Rapp.history
 .DS_Store
+docs/CNAME
 
 # Session Data files
 .RData
@@ -40,3 +41,4 @@ vignettes/*.pdf
 .Renviron
 
 /.quarto/
+docs/CNAME

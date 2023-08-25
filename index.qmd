@@ -11,7 +11,7 @@ about:
       text: Github
       href: https://github.com/ruizt
     - icon: calendar
-      text: Scheduling
+      text: Appointments
       href: https://calendly.com/tdruiz
 ---
 
