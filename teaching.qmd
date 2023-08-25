@@ -2,7 +2,7 @@
 title: "Teaching"
 ---
 
-Much of my experience teaching statistics is concentrated around methods, applications, and data science, but I have broad interests in teaching across and beyond the discipline. I have designed a few courses; you can see an example [here](https://ruizt.github.io/pstat100). One of my more significant teaching projects involved extensive work on a capstone course sequence at UCSB that combined project-based learning with training on "soft" skills; you can read about that [here](http://ruizt.github.io/pstat197). A full list of courses I've taught follows; I'm happy to share materials for instructional purposes on request.
+Much of my experience teaching statistics is concentrated around methods, applications, and data science, but I have broad interests. A full list of courses I've taught follows; I'm happy to share materials for instructional purposes on request.
 
 ### Cal Poly
 

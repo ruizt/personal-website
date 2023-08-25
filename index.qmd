@@ -10,6 +10,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/ruizt
+    - icon: calendar
+      text: Scheduling
+      href: https://calendly.com/tdruiz
 ---
 
 Hello, I'm an Assistant Professor in the Statistics Department at Cal Poly, San Luis Obispo. Most of my work is informed by an interest in applications of statistical methods in the sciences. Here you can find information about my teaching and research activity.
