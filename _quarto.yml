@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Trevor D. Ruiz"
+  google-analytics: "G-H3YKZX4J88"
   page-navigation: false
   page-footer: "\u00a9 2023 Trevor Ruiz"
   navbar:
