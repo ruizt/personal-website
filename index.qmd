@@ -7,12 +7,15 @@ about:
     - icon: envelope
       text: Email
       href: mailto:truiz01@calpoly.edu
+    - icon: calendar-plus
+      text: Meet
+      href: https://calendly.com/tdruiz
+    - icon: mortarboard
+      text: Scholar
+      href: https://scholar.google.com/citations?user=YhlR1RkAAAAJ
     - icon: github
       text: Github
       href: https://github.com/ruizt
-    - icon: calendar
-      text: Appointments
-      href: https://calendly.com/tdruiz
 ---
 
 Hello, I'm an Assistant Professor in the Statistics Department at Cal Poly, San Luis Obispo. Most of my work is informed by an interest in applications of statistical methods in the sciences. Here you can find information about my teaching and research activity.
