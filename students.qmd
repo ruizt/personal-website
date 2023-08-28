@@ -4,7 +4,7 @@ editor: visual
 bibliography: refs.bib
 ---
 
-I'm currently developing projects that include opportunities for student contributions; more information will be posted here as these take shape. In the meantime, if you're a student and you're interested in research opportunities, please get in touch.
+I'm currently developing projects that include opportunities for student contributions; more information will be posted here as these projects take shape. If you're interested in research opportunities or have any questions about student research --- even completely general ones! --- please feel free [get in touch via email](mailto:truiz01@calpoly.edu) or [set up a meeting](https://calendly.com/tdruiz).
 
 ## Regression methods for high-dimensional compositional predictors with application to predicting marine mammal abundance
 
