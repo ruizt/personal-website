@@ -16,7 +16,7 @@ website:
         text: About
       - teaching.qmd
       - research.qmd
-      - projects.qmd
+      - students.qmd
 
 format:
   html:

@@ -4,26 +4,37 @@ editor: visual
 bibliography: refs.bib
 ---
 
+I'm interested broadly in models and methods for correlated and high-dimensional data with applications in life sciences. I also enjoy data analysis projects, especially those with spatial and temporal aspects. My graduate research focused on model selection and inference of causal networks in the context of multiple time series analysis. I'm currently exploring topics related to compositional data analysis in ecology.
+
+If you're a student, researcher, or data professional, and potentially interested in working together, please feel free to reach out via [email](mailto:truiz01@calpoly.edu) or set up a meeting via my [scheduling page](https://calendly.com/tdruiz). I'm particularly interested in collaborations that create opportunities for student contributions.
+
+A list of past works follows.
+
 ## High-dimensional time series
 
-### Model selection
+High-dimensional time series --- serial observations of a large number of measurements --- are often modeled using an autoregressive framework for representing serial dependence within and between series. The model parametrization for this approach is dense, requiring a minimum of $p^2$ parameters for a $p$-variate time series. Many of these parameters are negligibly small or contribute minimally to model fit. Filtering out those parameters at the model fitting stage and selecting a reduced model is a challenge in practice with finite samples. My work in this area focuses on the use of resampling and stability methods with regularization for model selection, especially in the context of models for count data; applications include estimating ecological interaction networks and neural functional connectivity.
 
-High-dimensional time series --- serial observations of a large number of measurements --- are often modeled using an autoregressive framework for representing serial dependence within and between series. The model parametrization for this approach is dense, requiring a minimum of $p^2$ parameters for a $p$-variate time series. Many of these parameters are negligibly small or contribute minimally to model fit; yet filtering out those parameters at the model fitting stage and selecting a reduced model is a challenge in practice with finite samples.
+1.  **T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson (2023). Sparse estimation of parameter support sets for generalized vector autoregressions by resampling and model aggregation. *Submitted*. \[[preprint](https://doi.org/10.48550/arXiv.2307.09684)\]
+2.  **T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson (2022). A graphical sufficient condition for the stability of first-order log-linear Poisson generalized vector autoregressive processes. *Under review.* \[[preprint](https://dx.doi.org/10.2139/ssrn.4283477)\]
+3.  **T. D. Ruiz**, S. Bhattacharyya, M. Balasubramanian, K. Bouchard (2020). Sparse and low-bias estimation of high dimensional vector autoregressive models. *Proceedings of the 2nd Conference on Learning for Dynamics and Control* in *Proceedings of Machine Learning Research.* \[[paper](https://proceedings.mlr.press/v120/ruiz20a.html)\]
+4.  M. Balasubramanian, **T. D. Ruiz**, B. Cook, M. Prabhat, S. Bhattacharyya, A. Shrivastava, K. E. Bouchard (2020). Scaling of union of intersections for inference of granger causal networks from observational data. *IEEE International Parallel and Distributed Processing Symposium.* \[[paper](https://doi.org/10.1109/IPDPS47924.2020.00036)\]
+5.  **T. D. Ruiz** (2020). Estimation and sparse selection of conditional probability models for vector time series. *Oregon State University.* \[[thesis](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/k0698g13s)\]
 
-I have a series of works exploring empirical methods of selecting an appropriate parameter subset for vector autoregressive models using resampling techniques. Early methods adapted an approach from the ordinary regression setting more or less directly [@ruiz2020sparse] and explored performance when computations on resamples are carried out in parallel on a distributed architecture [@balasubramanian2020scaling]. My dissertation research refined the methodology through empirical experiments and considered its application to models for count-valued data [@ruiz2020estimation]. Based on these experiments, I proposed selecting parameters identified with a user-specified minimum frequency across several validation subsamples [@ruiz2023sparse]. This method has applications in estimating causal networks from time series data, such as ecological interaction networks, functional connectivity in the brain, or macroeconomic relationships.
-
-### Poisson models for multivariate counts
-
-Poisson mixtures with autoregressive conditional means provide a convenient framework for modeling count-valued multivariate time series due to their close connection with generalized linear models. For these models, the canonical link yields a process with conditional means that are log-linear in past values. This allows for both positive and negative serial correlations, but can result in superexponentiation of the mean over time unless parameters are chosen carefully. However, the unconditional process moments are not analytically tractable, so identifying the exact subset of the parameter space on which the process is stable is a challenge.
-
-I developed a constraint on the positive serial correlation structure for the log-linear model that is sufficient to ensure bounded first and second process moments [@ruiz2022graphical]. This has implications for simulation as well as for understanding model limitations. Future work might relax the constraint, establish necessary and sufficient stability conditions for the log-linear model, or propose an alternative parametrization that allows both positive and negative serial correlations but avoids the superexponentiation problem.
-
-## Applications
-
-### Agricultural epidemiology
+## Agricultural epidemiology
 
 Agricultural epidemics driven by aerially-dispersed pathogens exhibit spatially anisotropic patterns of expansion from epicenters due to varying windspeeds and landscape features. Covariates that potentially explain patterns of anisotropy are readily available from public data sources, and thus allow for several approaches to modeling disease spread to potentially aid in identifying effective management interventions.
 
-I developed a network approach for modeling regional dispersal: disease levels obtained from a census of growing locations along with time-averaged wind intensity along the directions between locations were used to forecast disease levels using nonlinear generalized regression models [@gent2019prediction]. I also developed a framework for modeling continental-scale epidemics with multiple epicenters using time-of-first-occurrence data from a spatially sparse monitoring network of sentinel growing plots [@ojwang2021general].
+6.  A. M. E. Ojwang, **T. D. Ruiz**, S. Bhattacharyya, S. Chatterjee, P. S. Ojiambo, D. H. Gent (2021). A general framework for spatio-temporal modeling of epidemics with multiple epicenters: application to an aerially dispersed plant pathogen. *Frontiers in Applied Mathematics and Statistics.* \[[paper](https://doi.org/10.3389/fams.2021.721352)\]
+7.  D. H. Gent, S. Bhattacharyya, **T. D. Ruiz** (2019). Prediction of spread and regional development of hop powdery mildew: a network analysis. *Phytopathology.* \[[paper](https://doi.org/10.1094/PHYTO-12-18-0483-R)\]
 
-### Publications and other works cited
+## Student capstone projects
+
+I co/led instruction of a year-long capstone in 2021-2022 and 2022-2023 with the goal of engaging undergraduate students in collaborative research. In the two years I oversaw the course we supported 28 projects spanning a wide range of domain and industry applications. I had the good fortune of working with many talented students and dedicated partnering labs and companies, several of whom extended their research efforts in various ways beyond the scope of the class.
+
+Conference participation:
+
+-   S. Rumsey, E. Ho, C. Zheng, N. Setiawan, J. Park, M. Elcheikhali, **T. D. Ruiz**, A. Kolbeinsson, E. J. Daza (2023). Identifying case onset points for early detection of influenza-like illness. *ACM SIGKDD'23 Southern California Data Science Day.* Poster presentation.
+
+-   L. Umsted, J. Liu, P. Trujillo, E. Burrell, L. B. Lancheros, **T. D. Ruiz**, E. Noi, E. Zhou, S. Dodge (2023). Understanding and modeling human mobility response to California wildfires. *ACM SIGKDD'23 Southern California Data Science Day.* Poster presentation.
+
+-   M. Gupta, A. Adams, E. Satterthwaite, **T. D. Ruiz** (2022). A scrollytelling primer on hypoxia: developing a data storytelling tool to communicate ocean observing data to California citizens. *CalCOFI Conference 2022: Innovative Techniques and Novel Applications of Time Series Data to Marine Resource Management.* Contributed presentation.

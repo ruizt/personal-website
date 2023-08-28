@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -122,7 +103,7 @@ gtag('config', 'G-H3YKZX4J88', { 'anonymize_ip': true});
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" rel="" target="" aria-current="page">
+    <a class="nav-link active" href="./students.html" rel="" target="" aria-current="page">
  <span class="menu-text">Student projects</span></a>
   </li>  
 </ul>
@@ -141,7 +122,7 @@ gtag('config', 'G-H3YKZX4J88', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#capstone-projects" id="toc-capstone-projects" class="nav-link active" data-scroll-target="#capstone-projects">Capstone projects</a></li>
+  <li><a href="#regression-methods-for-high-dimensional-compositional-predictors-with-application-to-predicting-marine-mammal-abundance" id="toc-regression-methods-for-high-dimensional-compositional-predictors-with-application-to-predicting-marine-mammal-abundance" class="nav-link active" data-scroll-target="#regression-methods-for-high-dimensional-compositional-predictors-with-application-to-predicting-marine-mammal-abundance">Regression methods for high-dimensional compositional predictors with application to predicting marine mammal abundance</a></li>
   </ul>
 </nav>
     </div>
@@ -166,36 +147,26 @@ gtag('config', 'G-H3YKZX4J88', { 'anonymize_ip': true});
 </header>
 
 <p>I’m currently developing projects that include opportunities for student contributions; more information will be posted here as these take shape. In the meantime, if you’re a student and you’re interested in research opportunities, please get in touch.</p>
-<section id="capstone-projects" class="level3">
-<h3 class="anchored" data-anchor-id="capstone-projects">Capstone projects</h3>
-<p>While at UCSB I co/led instruction of a year-long capstone<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> in 2021-2022 and 2022-2023. The goal of the capstone was to engage undergraduate students in collaborative research. In the two years I oversaw the course we had 28 projects spanning a wide range of domain and industry applications.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> I had the good fortune of working with many talented students and dedicated partnering labs and companies, several of whom extended their research efforts in various ways beyond the scope of the class.</p>
-<p>In 2022, two students extended a project on visualizing oceanographic data by developing outreach materials for public science education and engagement and gave a presentation on data storytelling at the sponsoring organization’s annual conference <span class="citation" data-cites="gupta2022scrollytelling">(<a href="#ref-gupta2022scrollytelling" role="doc-biblioref">Gupta et al. 2022</a>)</span>. In 2023, two capstone groups presented their research during a poster session at the SIGKDD conference’s Southern California Data Science Day — one project used self-supervised learning to identify impact risk due to wildfires based on geography, fire, and location attributes <span class="citation" data-cites="umsted2023understanding">(<a href="#ref-umsted2023understanding" role="doc-biblioref">Umsted et al. 2023</a>)</span>, and the other explored an early detection system for identifying case onset of influenza-like illness based on biometric data from wearable devices <span class="citation" data-cites="rumsey2023identifying">(<a href="#ref-rumsey2023identifying" role="doc-biblioref">Rumsey et al. 2023</a>)</span>. Another notable project from this year involved constructing 3D models of bees using photogrammetry <span class="citation" data-cites="spasibenko2023exploring">(<a href="#ref-spasibenko2023exploring" role="doc-biblioref">Spasibenko et al. 2023</a>)</span>.</p>
-
+<section id="regression-methods-for-high-dimensional-compositional-predictors-with-application-to-predicting-marine-mammal-abundance" class="level2">
+<h2 class="anchored" data-anchor-id="regression-methods-for-high-dimensional-compositional-predictors-with-application-to-predicting-marine-mammal-abundance">Regression methods for high-dimensional compositional predictors with application to predicting marine mammal abundance</h2>
+<p><strong>Abstract:</strong> Compositional data are observations that carry relative information about a collection of parts or components. Examples include proportions, percentages, concentrations, and relative abundances. Such data do not exhibit the usual Euclidean geometry owing to inherent sum constraints (e.g., proportions must sum to one). This poses challenges for statistical analysis and interpretation. Additional challenges arise from high dimensionality (many parts) and sparsity (many zeroes) present in applications involving genetic sequencing data (<em>e.g.,</em> microbiome studies, genomics). In many such applications it is of interest to model or predict a quantitative or categorical response from high-dimensional compositions; while there are several existing approaches to regression based on regularization and/or dimension reduction techniques, it is not always straightforward to incorporate additional non-compositional covariates into such frameworks. Furthermore, data imputation is commonly performed to replace zeroes prior to analysis, and the effect of this practice on model estimates and inferences is poorly understood. This project will explore the above topics through an analysis identifying microbial taxa predictive of marine mammal density using environmental DNA and ecological survey data.</p>
+<p><strong>Expected outcomes:</strong> student(s) will learn basics of compositional data analysis and study imputation, transformation, and regression methods for high-dimensional compositions. These methods will be implemented in an analysis leading to a journal publication. The project also carries potential for method development, simulation, or algorithm development depending on interest.</p>
+<p><strong>Suggested preparation:</strong> intermediate-level proficiency in R (STAT 331 or similar); regression analysis (STAT 334 or similar); multivariate analysis (STAT 419 or similar). <em>Please note that these are not strict requirements.</em></p>
+<p><strong>References:</strong></p>
+<ol type="1">
+<li><p>Shi, P., Zhou, Y., &amp; Zhang, A. R. (2022). High-dimensional log-error-in-variable regression with applications to microbial compositional data analysis.&nbsp;<em>Biometrika</em>,&nbsp;<em>109</em>(2), 405-420. [<a href="https://csu-calpoly.primo.exlibrisgroup.com/permalink/01CALS_PSU/hls1s0/cdi_proquest_journals_2675447628">available through Kennedy Library</a>]</p></li>
+<li><p>Greenacre, M. (2021). Compositional data analysis.&nbsp;<em>Annual Review of Statistics and its Application</em>,&nbsp;<em>8</em>, 271-299. [<a href="https://doi.org/10.1146/annurev-statistics-042720-124436">link</a>]</p></li>
+<li><p>Filzmoser, P., Hron, K., &amp; Templ, M. (2018). Applied compositional data analysis.&nbsp;<em>Cham: Springer</em>. [<a href="http://ndl.ethernet.edu.et/bitstream/123456789/64328/1/404.pdf">link</a>]</p></li>
+<li><p>Li, H. (2015). Microbiome, metagenomics, and high-dimensional compositional data analysis.&nbsp;<em>Annual Review of Statistics and Its Application</em>,&nbsp;<em>2</em>, 73-94. [<a href="https://doi.org/10.1146/annurev-statistics-010814-020351">link</a>]</p></li>
+<li><p>Pawlowsky-Glahn, V., Egozcue, J. J., &amp; Tolosana-Delgado, R. (2015). Modeling and analysis of compositional data. [<a href="https://csu-calpoly.primo.exlibrisgroup.com/permalink/01CALS_PSU/hls1s0/cdi_askewsholts_vlebooks_9781119003137">available through Kennedy Library</a>]</p></li>
+<li><p>Hoffmann, I., Serneels, S., Filzmoser, P., &amp; Croux, C. (2015). Sparse partial robust M regression.&nbsp;<em>Chemometrics and Intelligent Laboratory Systems</em>,&nbsp;<em>149</em>, 50-59. [<a href="https://doi.org/10.1016/j.chemolab.2015.09.019">link</a>]</p></li>
+<li><p>Lin, W., Shi, P., Feng, R., &amp; Li, H. (2014). Variable selection in regression with compositional covariates.&nbsp;<em>Biometrika</em>,&nbsp;<em>101</em>(4), 785-797. [<a href="https://csu-calpoly.primo.exlibrisgroup.com/permalink/01CALS_PSU/hls1s0/cdi_proquest_journals_1628653916">available through Kennedy Library</a>]</p></li>
+</ol>
 
 
 </section>
 
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-gupta2022scrollytelling" class="csl-entry" role="listitem">
-Gupta, Mallika, Annie Adams, Erin Satterthwaite, and Trevor Ruiz. 2022. <span>“A Scrollytelling Primer on Hypoxia: Developing a Data Storytelling Tool to Communicate Ocean Observing Data to California Citizens.”</span> In <em>CalCOFI Conference 2022: Innovative Techniques and Novel Applications of Time Series Data to Marine Resource Management</em>. CalCOFI.
-</div>
-<div id="ref-rumsey2023identifying" class="csl-entry" role="listitem">
-Rumsey, Shannon, Edward Ho, Chunting Zheng, Nealson Setiawan, Jennifer Park, Meghan Elcheikhali, Trevor Ruiz, Arinbjörn Kolbeinsson, and Eric J Daza. 2023. <span>“Identifying Case Onset Points for Early Detection of Influenza-Like Illness.”</span> In <em>KDD’23 Southern California Data Science Day</em>. ACM.
-</div>
-<div id="ref-spasibenko2023exploring" class="csl-entry" role="listitem">
-Spasibenko, Sofia, Allester Ramayrat, William Long, and Daniel Badilla Jr. 2023. <span>“Exploring Photogrammetric Methods to Extend Anthophilia Research (Big-Bee) Interim Report.”</span> <em>UC Santa Barbara: Cheadle Center for Biodiversity and Ecological Restoration</em>. <a href="https://escholarship.org/uc/item/0th7b3mh">https://escholarship.org/uc/item/0th7b3mh</a>.
-</div>
-<div id="ref-umsted2023understanding" class="csl-entry" role="listitem">
-Umsted, Lyndsey, Justin Liu, Piero Trujillo, Ellen Burrell, Laura Baracaldo Lancheros, Trevor Ruiz, Evgeny Noi, Enbo Zhou, and Somayeh Dodge. 2023. <span>“Understanding and Modeling Human Mobility Response to California Wildfires.”</span> In <em>KDD’23 Southern California Data Science Day</em>. ACM.
-</div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Read the sequence description on my <a href="./teaching.html#pstat197">teaching page</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>A full project list can be found <a href="http://ruizt.github.io/pstat197">here</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -1,0 +1,31 @@
+---
+title: "Student projects"
+editor: visual
+bibliography: refs.bib
+---
+
+I'm currently developing projects that include opportunities for student contributions; more information will be posted here as these take shape. In the meantime, if you're a student and you're interested in research opportunities, please get in touch.
+
+## Regression methods for high-dimensional compositional predictors with application to predicting marine mammal abundance
+
+**Abstract:** Compositional data are observations that carry relative information about a collection of parts or components. Examples include proportions, percentages, concentrations, and relative abundances. Such data do not exhibit the usual Euclidean geometry owing to inherent sum constraints (e.g., proportions must sum to one). This poses challenges for statistical analysis and interpretation. Additional challenges arise from high dimensionality (many parts) and sparsity (many zeroes) present in applications involving genetic sequencing data (*e.g.,* microbiome studies, genomics). In many such applications it is of interest to model or predict a quantitative or categorical response from high-dimensional compositions; while there are several existing approaches to regression based on regularization and/or dimension reduction techniques, it is not always straightforward to incorporate additional non-compositional covariates into such frameworks. Furthermore, data imputation is commonly performed to replace zeroes prior to analysis, and the effect of this practice on model estimates and inferences is poorly understood. This project will explore the above topics through an analysis identifying microbial taxa predictive of marine mammal density using environmental DNA and ecological survey data.
+
+**Expected outcomes:** student(s) will learn basics of compositional data analysis and study imputation, transformation, and regression methods for high-dimensional compositions. These methods will be implemented in an analysis leading to a journal publication. The project also carries potential for method development, simulation, or algorithm development depending on interest.
+
+**Suggested preparation:** intermediate-level proficiency in R (STAT 331 or similar); regression analysis (STAT 334 or similar); multivariate analysis (STAT 419 or similar). *Please note that these are not strict requirements.*
+
+**References:**
+
+1.  Shi, P., Zhou, Y., & Zhang, A. R. (2022). High-dimensional log-error-in-variable regression with applications to microbial compositional data analysis. *Biometrika*, *109*(2), 405-420. \[[available through Kennedy Library](https://csu-calpoly.primo.exlibrisgroup.com/permalink/01CALS_PSU/hls1s0/cdi_proquest_journals_2675447628)\]
+
+2.  Greenacre, M. (2021). Compositional data analysis. *Annual Review of Statistics and its Application*, *8*, 271-299. \[[link](https://doi.org/10.1146/annurev-statistics-042720-124436)\]
+
+3.  Filzmoser, P., Hron, K., & Templ, M. (2018). Applied compositional data analysis. *Cham: Springer*. \[[link](http://ndl.ethernet.edu.et/bitstream/123456789/64328/1/404.pdf)\]
+
+4.  Li, H. (2015). Microbiome, metagenomics, and high-dimensional compositional data analysis. *Annual Review of Statistics and Its Application*, *2*, 73-94. \[[link](https://doi.org/10.1146/annurev-statistics-010814-020351)\]
+
+5.  Pawlowsky-Glahn, V., Egozcue, J. J., & Tolosana-Delgado, R. (2015). Modeling and analysis of compositional data. \[[available through Kennedy Library](https://csu-calpoly.primo.exlibrisgroup.com/permalink/01CALS_PSU/hls1s0/cdi_askewsholts_vlebooks_9781119003137)\]
+
+6.  Hoffmann, I., Serneels, S., Filzmoser, P., & Croux, C. (2015). Sparse partial robust M regression. *Chemometrics and Intelligent Laboratory Systems*, *149*, 50-59. \[[link](https://doi.org/10.1016/j.chemolab.2015.09.019)\]
+
+7.  Lin, W., Shi, P., Feng, R., & Li, H. (2014). Variable selection in regression with compositional covariates. *Biometrika*, *101*(4), 785-797. \[[available through Kennedy Library](https://csu-calpoly.primo.exlibrisgroup.com/permalink/01CALS_PSU/hls1s0/cdi_proquest_journals_1628653916)\]

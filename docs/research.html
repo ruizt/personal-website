@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -124,7 +105,7 @@ gtag('config', 'G-H3YKZX4J88', { 'anonymize_ip': true});
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html" rel="" target="">
+    <a class="nav-link" href="./students.html" rel="" target="">
  <span class="menu-text">Student projects</span></a>
   </li>  
 </ul>
@@ -143,16 +124,9 @@ gtag('config', 'G-H3YKZX4J88', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#high-dimensional-time-series" id="toc-high-dimensional-time-series" class="nav-link active" data-scroll-target="#high-dimensional-time-series">High-dimensional time series</a>
-  <ul class="collapse">
-  <li><a href="#model-selection" id="toc-model-selection" class="nav-link" data-scroll-target="#model-selection">Model selection</a></li>
-  <li><a href="#poisson-models-for-multivariate-counts" id="toc-poisson-models-for-multivariate-counts" class="nav-link" data-scroll-target="#poisson-models-for-multivariate-counts">Poisson models for multivariate counts</a></li>
-  </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a>
-  <ul class="collapse">
+  <li><a href="#high-dimensional-time-series" id="toc-high-dimensional-time-series" class="nav-link active" data-scroll-target="#high-dimensional-time-series">High-dimensional time series</a></li>
   <li><a href="#agricultural-epidemiology" id="toc-agricultural-epidemiology" class="nav-link" data-scroll-target="#agricultural-epidemiology">Agricultural epidemiology</a></li>
-  <li><a href="#publications-and-other-works-cited" id="toc-publications-and-other-works-cited" class="nav-link" data-scroll-target="#publications-and-other-works-cited">Publications and other works cited</a></li>
-  </ul></li>
+  <li><a href="#student-capstone-projects" id="toc-student-capstone-projects" class="nav-link" data-scroll-target="#student-capstone-projects">Student capstone projects</a></li>
   </ul>
 </nav>
     </div>
@@ -176,57 +150,42 @@ gtag('config', 'G-H3YKZX4J88', { 'anonymize_ip': true});
 
 </header>
 
+<p>I’m interested broadly in models and methods for correlated and high-dimensional data with applications in life sciences. I also enjoy data analysis projects, especially those with spatial and temporal aspects. My graduate research focused on model selection and inference of causal networks in the context of multiple time series analysis. I’m currently exploring topics related to compositional data analysis in ecology.</p>
+<p>If you’re a student, researcher, or data professional, and potentially interested in working together, please feel free to reach out via <a href="mailto:truiz01@calpoly.edu">email</a> or set up a meeting via my <a href="https://calendly.com/tdruiz">scheduling page</a>. I’m particularly interested in collaborations that create opportunities for student contributions.</p>
+<p>A list of past works follows.</p>
 <section id="high-dimensional-time-series" class="level2">
 <h2 class="anchored" data-anchor-id="high-dimensional-time-series">High-dimensional time series</h2>
-<section id="model-selection" class="level3">
-<h3 class="anchored" data-anchor-id="model-selection">Model selection</h3>
-<p>High-dimensional time series — serial observations of a large number of measurements — are often modeled using an autoregressive framework for representing serial dependence within and between series. The model parametrization for this approach is dense, requiring a minimum of <span class="math inline">\(p^2\)</span> parameters for a <span class="math inline">\(p\)</span>-variate time series. Many of these parameters are negligibly small or contribute minimally to model fit; yet filtering out those parameters at the model fitting stage and selecting a reduced model is a challenge in practice with finite samples.</p>
-<p>I have a series of works exploring empirical methods of selecting an appropriate parameter subset for vector autoregressive models using resampling techniques. Early methods adapted an approach from the ordinary regression setting more or less directly <span class="citation" data-cites="ruiz2020sparse">(<a href="#ref-ruiz2020sparse" role="doc-biblioref">T. Ruiz et al. 2020</a>)</span> and explored performance when computations on resamples are carried out in parallel on a distributed architecture <span class="citation" data-cites="balasubramanian2020scaling">(<a href="#ref-balasubramanian2020scaling" role="doc-biblioref">Balasubramanian et al. 2020</a>)</span>. My dissertation research refined the methodology through empirical experiments and considered its application to models for count-valued data <span class="citation" data-cites="ruiz2020estimation">(<a href="#ref-ruiz2020estimation" role="doc-biblioref">T. D. Ruiz 2020</a>)</span>. Based on these experiments, I proposed selecting parameters identified with a user-specified minimum frequency across several validation subsamples <span class="citation" data-cites="ruiz2023sparse">(<a href="#ref-ruiz2023sparse" role="doc-biblioref">T. D. Ruiz, Bhattacharyya, and Emerson 2023</a>)</span>. This method has applications in estimating causal networks from time series data, such as ecological interaction networks, functional connectivity in the brain, or macroeconomic relationships.</p>
+<p>High-dimensional time series — serial observations of a large number of measurements — are often modeled using an autoregressive framework for representing serial dependence within and between series. The model parametrization for this approach is dense, requiring a minimum of <span class="math inline">\(p^2\)</span> parameters for a <span class="math inline">\(p\)</span>-variate time series. Many of these parameters are negligibly small or contribute minimally to model fit. Filtering out those parameters at the model fitting stage and selecting a reduced model is a challenge in practice with finite samples. My work in this area focuses on the use of resampling and stability methods with regularization for model selection, especially in the context of models for count data; applications include estimating ecological interaction networks and neural functional connectivity.</p>
+<ol type="1">
+<li><strong>T. D. Ruiz</strong>, S. Bhattacharyya, S. C. Emerson (2023). Sparse estimation of parameter support sets for generalized vector autoregressions by resampling and model aggregation. <em>Submitted</em>. [<a href="https://doi.org/10.48550/arXiv.2307.09684">preprint</a>]</li>
+<li><strong>T. D. Ruiz</strong>, S. Bhattacharyya, S. C. Emerson (2022). A graphical sufficient condition for the stability of first-order log-linear Poisson generalized vector autoregressive processes. <em>Under review.</em> [<a href="https://dx.doi.org/10.2139/ssrn.4283477">preprint</a>]</li>
+<li><strong>T. D. Ruiz</strong>, S. Bhattacharyya, M. Balasubramanian, K. Bouchard (2020). Sparse and low-bias estimation of high dimensional vector autoregressive models. <em>Proceedings of the 2nd Conference on Learning for Dynamics and Control</em> in <em>Proceedings of Machine Learning Research.</em> [<a href="https://proceedings.mlr.press/v120/ruiz20a.html">paper</a>]</li>
+<li>M. Balasubramanian, <strong>T. D. Ruiz</strong>, B. Cook, M. Prabhat, S. Bhattacharyya, A. Shrivastava, K. E. Bouchard (2020). Scaling of union of intersections for inference of granger causal networks from observational data. <em>IEEE International Parallel and Distributed Processing Symposium.</em> [<a href="https://doi.org/10.1109/IPDPS47924.2020.00036">paper</a>]</li>
+<li><strong>T. D. Ruiz</strong> (2020). Estimation and sparse selection of conditional probability models for vector time series. <em>Oregon State University.</em> [<a href="https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/k0698g13s">thesis</a>]</li>
+</ol>
 </section>
-<section id="poisson-models-for-multivariate-counts" class="level3">
-<h3 class="anchored" data-anchor-id="poisson-models-for-multivariate-counts">Poisson models for multivariate counts</h3>
-<p>Poisson mixtures with autoregressive conditional means provide a convenient framework for modeling count-valued multivariate time series due to their close connection with generalized linear models. For these models, the canonical link yields a process with conditional means that are log-linear in past values. This allows for both positive and negative serial correlations, but can result in superexponentiation of the mean over time unless parameters are chosen carefully. However, the unconditional process moments are not analytically tractable, so identifying the exact subset of the parameter space on which the process is stable is a challenge.</p>
-<p>I developed a constraint on the positive serial correlation structure for the log-linear model that is sufficient to ensure bounded first and second process moments <span class="citation" data-cites="ruiz2022graphical">(<a href="#ref-ruiz2022graphical" role="doc-biblioref">T. D. Ruiz, Bhattacharyya, and Emerson 2022</a>)</span>. This has implications for simulation as well as for understanding model limitations. Future work might relax the constraint, establish necessary and sufficient stability conditions for the log-linear model, or propose an alternative parametrization that allows both positive and negative serial correlations but avoids the superexponentiation problem.</p>
-</section>
-</section>
-<section id="applications" class="level2">
-<h2 class="anchored" data-anchor-id="applications">Applications</h2>
-<section id="agricultural-epidemiology" class="level3">
-<h3 class="anchored" data-anchor-id="agricultural-epidemiology">Agricultural epidemiology</h3>
+<section id="agricultural-epidemiology" class="level2">
+<h2 class="anchored" data-anchor-id="agricultural-epidemiology">Agricultural epidemiology</h2>
 <p>Agricultural epidemics driven by aerially-dispersed pathogens exhibit spatially anisotropic patterns of expansion from epicenters due to varying windspeeds and landscape features. Covariates that potentially explain patterns of anisotropy are readily available from public data sources, and thus allow for several approaches to modeling disease spread to potentially aid in identifying effective management interventions.</p>
-<p>I developed a network approach for modeling regional dispersal: disease levels obtained from a census of growing locations along with time-averaged wind intensity along the directions between locations were used to forecast disease levels using nonlinear generalized regression models <span class="citation" data-cites="gent2019prediction">(<a href="#ref-gent2019prediction" role="doc-biblioref">Gent, Bhattacharyya, and Ruiz 2019</a>)</span>. I also developed a framework for modeling continental-scale epidemics with multiple epicenters using time-of-first-occurrence data from a spatially sparse monitoring network of sentinel growing plots <span class="citation" data-cites="ojwang2021general">(<a href="#ref-ojwang2021general" role="doc-biblioref">Ojwang et al. 2021</a>)</span>.</p>
+<ol start="6" type="1">
+<li>A. M. E. Ojwang, <strong>T. D. Ruiz</strong>, S. Bhattacharyya, S. Chatterjee, P. S. Ojiambo, D. H. Gent (2021). A general framework for spatio-temporal modeling of epidemics with multiple epicenters: application to an aerially dispersed plant pathogen. <em>Frontiers in Applied Mathematics and Statistics.</em> [<a href="https://doi.org/10.3389/fams.2021.721352">paper</a>]</li>
+<li>D. H. Gent, S. Bhattacharyya, <strong>T. D. Ruiz</strong> (2019). Prediction of spread and regional development of hop powdery mildew: a network analysis. <em>Phytopathology.</em> [<a href="https://doi.org/10.1094/PHYTO-12-18-0483-R">paper</a>]</li>
+</ol>
 </section>
-<section id="publications-and-other-works-cited" class="level3">
-
-
+<section id="student-capstone-projects" class="level2">
+<h2 class="anchored" data-anchor-id="student-capstone-projects">Student capstone projects</h2>
+<p>I co/led instruction of a year-long capstone in 2021-2022 and 2022-2023 with the goal of engaging undergraduate students in collaborative research. In the two years I oversaw the course we supported 28 projects spanning a wide range of domain and industry applications. I had the good fortune of working with many talented students and dedicated partnering labs and companies, several of whom extended their research efforts in various ways beyond the scope of the class.</p>
+<p>Conference participation:</p>
+<ul>
+<li><p>S. Rumsey, E. Ho, C. Zheng, N. Setiawan, J. Park, M. Elcheikhali, <strong>T. D. Ruiz</strong>, A. Kolbeinsson, E. J. Daza (2023). Identifying case onset points for early detection of influenza-like illness. <em>ACM SIGKDD’23 Southern California Data Science Day.</em> Poster presentation.</p></li>
+<li><p>L. Umsted, J. Liu, P. Trujillo, E. Burrell, L. B. Lancheros, <strong>T. D. Ruiz</strong>, E. Noi, E. Zhou, S. Dodge (2023). Understanding and modeling human mobility response to California wildfires. <em>ACM SIGKDD’23 Southern California Data Science Day.</em> Poster presentation.</p></li>
+<li><p>M. Gupta, A. Adams, E. Satterthwaite, <strong>T. D. Ruiz</strong> (2022). A scrollytelling primer on hypoxia: developing a data storytelling tool to communicate ocean observing data to California citizens. <em>CalCOFI Conference 2022: Innovative Techniques and Novel Applications of Time Series Data to Marine Resource Management.</em> Contributed presentation.</p></li>
+</ul>
 
 
 </section>
-</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Publications and other works cited</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-balasubramanian2020scaling" class="csl-entry" role="listitem">
-Balasubramanian, Mahesh, Trevor D Ruiz, Brandon Cook, Mr Prabhat, Sharmodeep Bhattacharyya, Aviral Shrivastava, and Kristofer E Bouchard. 2020. <span>“Scaling of Union of Intersections for Inference of Granger Causal Networks from Observational Data.”</span> In <em>2020 IEEE International Parallel and Distributed Processing Symposium (IPDPS)</em>, 264–73. IEEE. <a href="https://doi.org/10.1109/IPDPS47924.2020.00036">https://doi.org/10.1109/IPDPS47924.2020.00036</a>.
-</div>
-<div id="ref-gent2019prediction" class="csl-entry" role="listitem">
-Gent, David H, Sharmodeep Bhattacharyya, and Trevor Ruiz. 2019. <span>“Prediction of Spread and Regional Development of Hop Powdery Mildew: A Network Analysis.”</span> <em>Phytopathology</em> 109 (8): 1392–1403. <a href="https://doi.org/10.1094/PHYTO-12-18-0483-R">https://doi.org/10.1094/PHYTO-12-18-0483-R</a>.
-</div>
-<div id="ref-ojwang2021general" class="csl-entry" role="listitem">
-Ojwang, Awino ME, Trevor Ruiz, Sharmodeep Bhattacharyya, Shirshendu Chatterjee, Peter S Ojiambo, and David H Gent. 2021. <span>“A General Framework for Spatio-Temporal Modeling of Epidemics with Multiple Epicenters: Application to an Aerially Dispersed Plant Pathogen.”</span> <em>Frontiers in Applied Mathematics and Statistics</em>, 72. <a href="https://doi.org/10.3389/fams.2021.721352">https://doi.org/10.3389/fams.2021.721352</a>.
-</div>
-<div id="ref-ruiz2020estimation" class="csl-entry" role="listitem">
-Ruiz, Trevor D. 2020. <span>“Estimation and Sparse Selection of Conditional Probability Models for Vector Time Series.”</span> <a href="https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/k0698g13s">https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/k0698g13s</a>.
-</div>
-<div id="ref-ruiz2022graphical" class="csl-entry" role="listitem">
-Ruiz, Trevor D, Sharmodeep Bhattacharyya, and Sarah C Emerson. 2022. <span>“A Graphical Sufficient Condition for the Stability of First-Order Log-Linear Poisson Generalized Vector Autoregressive Processes.”</span> <em>Preprint Available at SSRN 4283477</em>. <a href="https://doi.org/10.2139/ssrn.4283477">https://doi.org/10.2139/ssrn.4283477</a>.
-</div>
-<div id="ref-ruiz2023sparse" class="csl-entry" role="listitem">
-———. 2023. <span>“Sparse Estimation of Parameter Support Sets for Generalized Vector Autoregressions by Resampling and Model Aggregation.”</span> <em>arXiv Preprint arXiv:2307.09684</em>. <a href="https://doi.org/10.48550/arXiv.2307.09684">https://doi.org/10.48550/arXiv.2307.09684</a>.
-</div>
-<div id="ref-ruiz2020sparse" class="csl-entry" role="listitem">
-Ruiz, Trevor, Sharmodeep Bhattacharyya, Mahesh Balasubramanian, and Kristofer Bouchard. 2020. <span>“Sparse and Low-Bias Estimation of High Dimensional Vector Autoregressive Models.”</span> In <em>Learning for Dynamics and Control</em>, 55–64. PMLR. <a href="http://proceedings.mlr.press/v120/ruiz20a.html">http://proceedings.mlr.press/v120/ruiz20a.html</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
