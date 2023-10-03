@@ -14,6 +14,8 @@ I'm currently developing projects that include opportunities for student contrib
 
 **Suggested preparation:** intermediate-level proficiency in R (STAT 331 or similar); regression analysis (STAT 334 or similar); multivariate analysis (STAT 419 or similar). *Please note that these are not strict requirements.*
 
+**Logistics:** ideally, the project would support 2-3 students working as a team during winter and spring quarters during the 2023-2024 academic year, with some potential to continue in summer.
+
 **References:**
 
 1.  Shi, P., Zhou, Y., & Zhang, A. R. (2022). High-dimensional log-error-in-variable regression with applications to microbial compositional data analysis. *Biometrika*, *109*(2), 405-420. \[[available through Kennedy Library](https://csu-calpoly.primo.exlibrisgroup.com/permalink/01CALS_PSU/hls1s0/cdi_proquest_journals_2675447628)\]
