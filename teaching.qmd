@@ -6,6 +6,12 @@ Much of my experience teaching statistics is concentrated around methods, applic
 
 ### Cal Poly
 
+#### **Applied statistics for life sciences** \[STAT218\]
+
+*Winter 2024, Spring 2024*
+
+Data collection and experimental design, descriptive statistics, confidence intervals, parametric and non parametric one and two-sample hypothesis tests, analysis of variance, correlation, simple linear regression, chi-square tests. Applications of statistics to the life sciences. Substantial use of statistical software.
+
 #### **Probability theory** \[STAT425\] \[[website](https://stat425.tdruiz.com/)\]  {#stat425}
 
 *Fall 2023*
