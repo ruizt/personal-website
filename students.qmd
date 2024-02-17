@@ -1,33 +1,45 @@
 ---
-title: "Student projects"
+title: "Student research"
 editor: visual
 bibliography: refs.bib
 ---
 
-I'm currently developing projects that include opportunities for student contributions; more information will be posted here as these projects take shape. If you're interested in research opportunities or have any questions about student research --- even completely general ones! --- please feel free [get in touch via email](mailto:truiz01@calpoly.edu) or [set up a meeting](https://calendly.com/tdruiz).
+I'm currently developing projects that include opportunities for student contributions, many of which are collaborative; more information will be posted here as these projects take shape. If you're interested in research opportunities or have any questions about student research --- even completely general ones! --- please feel free [get in touch via email](mailto:truiz01@calpoly.edu) or [set up a meeting](https://calendly.com/tdruiz).
 
-## Regression methods for high-dimensional compositional predictors with application to predicting marine mammal abundance
+Please note that not all projects listed on this page are currently active.
 
-**Abstract:** Compositional data are observations that carry relative information about a collection of parts or components. Examples include proportions, percentages, concentrations, and relative abundances. Such data do not exhibit the usual Euclidean geometry owing to inherent sum constraints (e.g., proportions must sum to one). This poses challenges for statistical analysis and interpretation. Additional challenges arise from high dimensionality (many parts) and sparsity (many zeroes) present in applications involving genetic sequencing data (*e.g.,* microbiome studies, genomics). In many such applications it is of interest to model or predict a quantitative or categorical response from high-dimensional compositions; while there are several existing approaches to regression based on regularization and/or dimension reduction techniques, it is not always straightforward to incorporate additional non-compositional covariates into such frameworks. Furthermore, data imputation is commonly performed to replace zeroes prior to analysis, and the effect of this practice on model estimates and inferences is poorly understood. This project will explore the above topics through an analysis identifying microbial taxa predictive of marine mammal density using environmental DNA and ecological survey data.
+## 2023-2024
 
-**Expected outcomes:** student(s) will learn basics of compositional data analysis and study imputation, transformation, and regression methods for high-dimensional compositions. These methods will be implemented in an analysis leading to a journal publication. The project also carries potential for method development, simulation, or algorithm development depending on interest.
+### Modeling baseline metabolic needs of pregnant rattlesnakes from high resolution time series of body temperatures
 
-**Suggested preparation:** intermediate-level proficiency in R (STAT 331 or similar); regression analysis (STAT 334 or similar); multivariate analysis (STAT 419 or similar). *Please note that these are not strict requirements.*
+**Project status**: proposed student project for Frost summer research program; \[[applications](https://forms.gle/uPUDvwNx857KY4Y26)\] open until March 1, 2024.
 
-**Logistics:** ideally, the project would support 2-3 students working as a team during winter and spring quarters during the 2023-2024 academic year, with some potential to continue in summer.
+**Abstract**: This project seeks to explore the effect of pregnancy on metabolism among rattlesnakes. Beaupre & Duvall (1998) measured oxygen consumption in male, non-pregnant female, and (early) pregnant female rattlesnakes and developed general equations for calculating resting metabolic rate given a snake's body temperature and weight. This project will leverage high-resolution time series of body temperatures collected from pregnant and non-pregnant female rattlesnakes over a period of several months to estimate metabolic rate fluctuations over time using the above-mentioned framework, and develop exploratory and statistical analyses aimed at (1) identifying metabolic differences between pregnant and non-pregnant rattlesnakes and (2) understanding temporal shifts in metabolism associated with seasonal and lifecycle factors.
 
-**References:**
+**Frost 2024 summer research positions**: This project will be a collaboration between biology and statistics students co-advised by biology and statistics faculty mentors. Thus, students working on this project can expect to gain experience in interdisciplinary collaboration; in addition, statistics students can expect to gain domain expertise, and biology students can expect to gain statistical expertise.
 
-1.  Shi, P., Zhou, Y., & Zhang, A. R. (2022). High-dimensional log-error-in-variable regression with applications to microbial compositional data analysis. *Biometrika*, *109*(2), 405-420. \[[available through Kennedy Library](https://csu-calpoly.primo.exlibrisgroup.com/permalink/01CALS_PSU/hls1s0/cdi_proquest_journals_2675447628)\]
+**Suggested preparation**: intermediate-level proficiency in R (STAT 331 or similar); regression analysis (STAT 334 or similar)
 
-2.  Greenacre, M. (2021). Compositional data analysis. *Annual Review of Statistics and its Application*, *8*, 271-299. \[[link](https://doi.org/10.1146/annurev-statistics-042720-124436)\]
+**Other notes**: collaboration with Haley Moniz (Biological Sciences, Cal Poly).
 
-3.  Filzmoser, P., Hron, K., & Templ, M. (2018). Applied compositional data analysis. *Cham: Springer*. \[[link](http://ndl.ethernet.edu.et/bitstream/123456789/64328/1/404.pdf)\]
+### Permutation inference for functional data
 
-4.  Li, H. (2015). Microbiome, metagenomics, and high-dimensional compositional data analysis. *Annual Review of Statistics and Its Application*, *2*, 73-94. \[[link](https://doi.org/10.1146/annurev-statistics-010814-020351)\]
+**Project status**: proposed student project for Frost summer research program; \[[applications](https://forms.gle/uPUDvwNx857KY4Y26)\] open until March 1, 2024.
 
-5.  Pawlowsky-Glahn, V., Egozcue, J. J., & Tolosana-Delgado, R. (2015). Modeling and analysis of compositional data. \[[available through Kennedy Library](https://csu-calpoly.primo.exlibrisgroup.com/permalink/01CALS_PSU/hls1s0/cdi_askewsholts_vlebooks_9781119003137)\]
+**Abstract:** In the functional data analysis (FDA) setting, responses are continuous functions rather than scalars/vectors. In practice, functional responses are measured at a discrete resolution and must first be estimated using smoothing approximation techniques prior to data analysis. In many studies, high-resolution functional measurements are obtained on relatively few observational/experimental units, with relatively more attention given to the functional sampling resolution than to replication, effectively prioritizing response approximation quality over statistical inference. This project will explore the use of permutation inference for functional data with small sample sizes. Methods will apply permutation alternatives to standard parametric multivariate statistical tests for two-sample inference and analysis of variance to functional principal components. While this idea has been proposed in prior literature, it is relatively under-explored, leaving room for original contributions. The project will investigate performance through simulation and demonstrate applications through data analyses.
 
-6.  Hoffmann, I., Serneels, S., Filzmoser, P., & Croux, C. (2015). Sparse partial robust M regression. *Chemometrics and Intelligent Laboratory Systems*, *149*, 50-59. \[[link](https://doi.org/10.1016/j.chemolab.2015.09.019)\]
+**Frost 2024 summer research positions**: Students would have some creative latitude regarding the project direction, though broadly the project will focus on how functional approximation impacts statistical power and seek to develop heuristics for application in practice. Students will leverage existing software packages for FDA in R to implement methods and carry out simulations and analyses, and can expect to gain expertise in functional data analysis, statistical computing, and methodological development.
 
-7.  Lin, W., Shi, P., Feng, R., & Li, H. (2014). Variable selection in regression with compositional covariates. *Biometrika*, *101*(4), 785-797. \[[available through Kennedy Library](https://csu-calpoly.primo.exlibrisgroup.com/permalink/01CALS_PSU/hls1s0/cdi_proquest_journals_1628653916)\]
+**Suggested preparation**: intermediate-level proficiency in R (STAT 331 or similar) and multivariate analysis (STAT 419 or similar).
+
+### Using environmental DNA to identify microbial taxa associated with marine mammal abundances
+
+**Project status**: currently active. Additional positions available through Frost summer research program, \[[applications](https://forms.gle/uPUDvwNx857KY4Y26)\] open until March 1, 2024.
+
+**Abstract:** This project seeks to leverage genetic metabarcoding data collected from quarterly cruises in the California current to search for microbial 'signatures' of presence and abundance of large marine mammals, with an initial focus on common species of whales. The project will involve using compositional data analysis and dimension reduction techniques to formulate a model of mammal abundance utilizing a sparse subset of microbial taxa and other covariates. There is also potential for the development of novel methodology. It is anticipated that the work will produce one or more journal publications.
+
+**Frost 2024 summer research positions**: Students working on this project during summer will focus specifically on the development, implementation, and benchmarking of a novel algorithm for supervised dimension reduction of compositional data adjusted for covariate effects, and can expect to gain expertise in statistical computing.
+
+**Suggested preparation:** intermediate-level proficiency in R (STAT 331 or similar); regression analysis (STAT 334 or similar) and multivariate analysis (STAT 419 or similar) preferred but not required.
+
+**Other notes**: collaboration with Erin Satterthwaite (Sea Grant/CalCOFI/UCSD).

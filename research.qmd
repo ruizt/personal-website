@@ -4,18 +4,14 @@ editor: visual
 bibliography: refs.bib
 ---
 
-I'm interested broadly in models and methods for correlated and high-dimensional data with applications in life sciences. I also enjoy data analysis projects, especially those with spatial and temporal aspects. My graduate research focused on model selection and inference of causal networks in the context of multiple time series analysis. I'm currently exploring topics related to compositional data analysis in ecology.
-
-If you're a student, researcher, or data professional, and potentially interested in working together, please feel free to reach out via [email](mailto:truiz01@calpoly.edu) or set up a meeting via my [scheduling page](https://calendly.com/tdruiz). I'm particularly interested in collaborations that create opportunities for student contributions.
-
-A list of past works follows.
+I'm interested broadly in models and methods for correlated and high-dimensional data with applications in life sciences. I also enjoy data analysis projects, especially those with spatial and temporal aspects. My graduate research focused on model selection and inference of causal networks in the context of multiple time series analysis. I'm currently exploring methods for the analysis of genetic metabarcoding data from ecological surveys, and developing several new research directions and collaborative projects with opportunities for student contributions.
 
 ## High-dimensional time series
 
 High-dimensional time series --- serial observations of a large number of measurements --- are often modeled using an autoregressive framework for representing serial dependence within and between series. The model parametrization for this approach is dense, requiring a minimum of $p^2$ parameters for a $p$-variate time series. Many of these parameters are negligibly small or contribute minimally to model fit. Filtering out those parameters at the model fitting stage and selecting a reduced model is a challenge in practice with finite samples. My work in this area focuses on the use of resampling and stability methods with regularization for model selection, especially in the context of models for count data; applications include estimating ecological interaction networks and neural functional connectivity.
 
-1.  **T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson (2023). Sparse estimation of parameter support sets for generalized vector autoregressions by resampling and model aggregation. *Submitted*. \[[preprint](https://doi.org/10.48550/arXiv.2307.09684)\]
-2.  **T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson (2022). A graphical sufficient condition for the stability of first-order log-linear Poisson generalized vector autoregressive processes. *Under review.* \[[preprint](https://dx.doi.org/10.2139/ssrn.4283477)\]
+1.  **T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson. Sparse estimation of parameter support sets for generalized vector autoregressions by resampling and model aggregation. \[[preprint](https://doi.org/10.48550/arXiv.2307.09684)\]
+2.  **T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson. A graphical sufficient condition for the stability of first-order log-linear Poisson generalized vector autoregressive processes. \[[preprint](https://dx.doi.org/10.2139/ssrn.4283477)\]
 3.  **T. D. Ruiz**, S. Bhattacharyya, M. Balasubramanian, K. Bouchard (2020). Sparse and low-bias estimation of high dimensional vector autoregressive models. *Proceedings of the 2nd Conference on Learning for Dynamics and Control* in *Proceedings of Machine Learning Research.* \[[paper](https://proceedings.mlr.press/v120/ruiz20a.html)\]
 4.  M. Balasubramanian, **T. D. Ruiz**, B. Cook, M. Prabhat, S. Bhattacharyya, A. Shrivastava, K. E. Bouchard (2020). Scaling of union of intersections for inference of granger causal networks from observational data. *IEEE International Parallel and Distributed Processing Symposium.* \[[paper](https://doi.org/10.1109/IPDPS47924.2020.00036)\]
 5.  **T. D. Ruiz** (2020). Estimation and sparse selection of conditional probability models for vector time series. *Oregon State University.* \[[thesis](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/k0698g13s)\]
