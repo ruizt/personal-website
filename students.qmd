@@ -1,5 +1,5 @@
 ---
-title: "Student research"
+title: "Student projects"
 editor: visual
 bibliography: refs.bib
 ---
@@ -43,3 +43,17 @@ Please note that not all projects listed on this page are currently active.
 **Suggested preparation:** intermediate-level proficiency in R (STAT 331 or similar); regression analysis (STAT 334 or similar) and multivariate analysis (STAT 419 or similar) preferred but not required.
 
 **Other notes**: collaboration with Erin Satterthwaite (Sea Grant/CalCOFI/UCSD).
+
+## 2022-2023 
+
+## Student capstone projects
+
+I co/led instruction of a year-long capstone in 2021-2022 and 2022-2023 with the goal of engaging undergraduate students in collaborative research. In the two years I oversaw the course we supported 28 projects spanning a wide range of domain and industry applications. A few of these projects extended beyond the scope of the class.
+
+Conference participation:
+
+-   S. Rumsey, E. Ho, C. Zheng, N. Setiawan, J. Park, M. Elcheikhali, T. D. Ruiz, A. Kolbeinsson, E. J. Daza (2023). Identifying case onset points for early detection of influenza-like illness. *ACM SIGKDD'23 Southern California Data Science Day.* Poster presentation.
+
+-   L. Umsted, J. Liu, P. Trujillo, E. Burrell, L. B. Lancheros, T. D. Ruiz, E. Noi, E. Zhou, S. Dodge (2023). Understanding and modeling human mobility response to California wildfires. *ACM SIGKDD'23 Southern California Data Science Day.* Poster presentation.
+
+-   M. Gupta, A. Adams, E. Satterthwaite, T. D. Ruiz (2022). A scrollytelling primer on hypoxia: developing a data storytelling tool to communicate ocean observing data to California citizens. *CalCOFI Conference 2022: Innovative Techniques and Novel Applications of Time Series Data to Marine Resource Management.* Contributed presentation.

@@ -14,8 +14,6 @@ website:
     background: light
     search: true
     left:
-      - href: index.qmd
-        text: About
       - teaching.qmd
       - research.qmd
       - students.qmd

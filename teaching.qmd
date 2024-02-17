@@ -14,7 +14,7 @@ Data collection and experimental design, descriptive statistics, confidence inte
 
 #### **Probability theory** \[STAT425\] \[[website](https://stat425.tdruiz.com/)\] {#stat425}
 
-*Fall 2023*
+*Fall 2023, Fall 2024*
 
 Basic probability theory, combinatorial methods, independence, conditional and marginal probability, probability models for random phenomena, random variables, probability distributions, distributions of functions of random variables, mathematical expectation, covariance and correlation, conditional expectation.
 
