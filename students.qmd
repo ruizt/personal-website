@@ -2,58 +2,69 @@
 title: "Student projects"
 editor: visual
 bibliography: refs.bib
+date: last-modified
+date-format: "MMMM YYYY"
+published-title: "Updated"
 ---
 
-I'm currently developing projects that include opportunities for student contributions, many of which are collaborative; more information will be posted here as these projects take shape. If you're interested in research opportunities or have any questions about student research --- even completely general ones! --- please feel free [get in touch via email](mailto:truiz01@calpoly.edu) or [set up a meeting](https://calendly.com/tdruiz).
+I'm eager to involve students in research; below is a list of projects with opportunities for student research assistants. Most of these projects are collaborative and focus on a specific application or data analysis that would be accessible to undergraduate students, but also have interesting methodological aspects and therein some potential to expand into methods projects suitable for graduate-level research. Past projects are also listed, so be sure to check the current project status. 
 
-Please note that not all projects listed on this page are currently active.
+If you're interested in any of these projects, or research opportunities in general, please feel free [get in touch via email](mailto:truiz01@calpoly.edu) or [set up a meeting](https://calendly.com/tdruiz).
 
 ## 2023-2024
 
 ### Modeling baseline metabolic needs of pregnant rattlesnakes from high resolution time series of body temperatures
 
-**Project status**: proposed student project for Frost summer research program; \[[applications](https://forms.gle/uPUDvwNx857KY4Y26)\] open until March 1, 2024.
+*Collaboration with Haley Moniz (Biological Sciences, Cal Poly)*
 
-**Abstract**: This project seeks to explore the effect of pregnancy on metabolism among rattlesnakes. Beaupre & Duvall (1998) measured oxygen consumption in male, non-pregnant female, and (early) pregnant female rattlesnakes and developed general equations for calculating resting metabolic rate given a snake's body temperature and weight. This project will leverage high-resolution time series of body temperatures collected from pregnant and non-pregnant female rattlesnakes over a period of several months to estimate metabolic rate fluctuations over time using the above-mentioned framework, and develop exploratory and statistical analyses aimed at (1) identifying metabolic differences between pregnant and non-pregnant rattlesnakes and (2) understanding temporal shifts in metabolism associated with seasonal and lifecycle factors.
+**Project status**: positions available through Frost summer research program; \[[apply](https://forms.gle/uPUDvwNx857KY4Y26)\] by March 1, 2024.
 
-**Frost 2024 summer research positions**: This project will be a collaboration between biology and statistics students co-advised by biology and statistics faculty mentors. Thus, students working on this project can expect to gain experience in interdisciplinary collaboration; in addition, statistics students can expect to gain domain expertise, and biology students can expect to gain statistical expertise.
+**Suggested preparation**. Intermediate-level proficiency in R (STAT 331 or similar); regression analysis (STAT 334 or similar).
 
-**Suggested preparation**: intermediate-level proficiency in R (STAT 331 or similar); regression analysis (STAT 334 or similar)
+#### **Abstract**
+This project seeks to explore the effect of pregnancy on metabolism among rattlesnakes. Beaupre & Duvall (1998) measured oxygen consumption in male, non-pregnant female, and (early) pregnant female rattlesnakes and developed general equations for calculating resting metabolic rate given a snake's body temperature and weight. This project will leverage high-resolution time series of body temperatures collected from pregnant and non-pregnant female rattlesnakes over a period of several months to estimate metabolic rate fluctuations over time using the above-mentioned framework, and develop exploratory and statistical analyses aimed at (1) identifying metabolic differences between pregnant and non-pregnant rattlesnakes and (2) understanding temporal shifts in metabolism associated with seasonal and lifecycle factors.
 
-**Other notes**: collaboration with Haley Moniz (Biological Sciences, Cal Poly).
+This research will be co-advised by biology and statistics faculty and will involve both biology and statistics students. Students can expect to gain experience in interdisciplinary collaboration; correspondingly, statistics students can expect to gain domain expertise and biology students can expect to gain statistical expertise. The project will culminate in a working manuscript for eventual submission to a peer-reviewed journal.
+
+*Keywords: thermal ecology; time series analysis; regression analysis; mixed-effects models.*
 
 ### Permutation inference for functional data
 
-**Project status**: proposed student project for Frost summer research program; \[[applications](https://forms.gle/uPUDvwNx857KY4Y26)\] open until March 1, 2024.
-
-**Abstract:** In the functional data analysis (FDA) setting, responses are continuous functions rather than scalars/vectors. In practice, functional responses are measured at a discrete resolution and must first be estimated using smoothing approximation techniques prior to data analysis. In many studies, high-resolution functional measurements are obtained on relatively few observational/experimental units, with relatively more attention given to the functional sampling resolution than to replication, effectively prioritizing response approximation quality over statistical inference. This project will explore the use of permutation inference for functional data with small sample sizes. Methods will apply permutation alternatives to standard parametric multivariate statistical tests for two-sample inference and analysis of variance to functional principal components. While this idea has been proposed in prior literature, it is relatively under-explored, leaving room for original contributions. The project will investigate performance through simulation and demonstrate applications through data analyses.
-
-**Frost 2024 summer research positions**: Students would have some creative latitude regarding the project direction, though broadly the project will focus on how functional approximation impacts statistical power and seek to develop heuristics for application in practice. Students will leverage existing software packages for FDA in R to implement methods and carry out simulations and analyses, and can expect to gain expertise in functional data analysis, statistical computing, and methodological development.
+**Project status**: positions available through Frost summer research program; \[[apply](https://forms.gle/uPUDvwNx857KY4Y26)\] by March 1, 2024.
 
 **Suggested preparation**: intermediate-level proficiency in R (STAT 331 or similar) and multivariate analysis (STAT 419 or similar).
 
+#### **Abstract** 
+In the functional data analysis (FDA) setting, responses are continuous functions rather than scalars/vectors. In practice, functional responses are measured at a discrete resolution and must first be estimated using smoothing approximation techniques prior to data analysis. In many studies, high-resolution functional measurements are obtained on relatively few observational/experimental units, with relatively more attention given to the functional sampling resolution than to replication, effectively prioritizing response approximation quality over statistical inference. This project will explore the use of permutation inference for functional data with small sample sizes. Methods will apply permutation alternatives to standard parametric multivariate statistical tests for two-sample inference and analysis of variance to functional principal components. While this idea has been proposed in prior literature, it is relatively under-explored, leaving room for original contributions. The project will investigate performance through simulation and demonstrate applications through data analyses.
+
+Students will focus on how functional approximations impact statistical power and seek to develop application heuristics based on simulations. Students will leverage existing software packages for FDA in R to implement methods and carry out simulations and analyses, and can expect to gain expertise in functional data analysis, statistical computing, and methodological development.
+
+*Keywords: hypothesis testing; multivariate analysis; functional data analysis; statistical computing and simulation.*
+
 ### Using environmental DNA to identify microbial taxa associated with marine mammal abundances
 
-**Project status**: currently active. Additional positions available through Frost summer research program, \[[applications](https://forms.gle/uPUDvwNx857KY4Y26)\] open until March 1, 2024.
+*Collaboration with Erin Satterthwaite (Sea Grant/CalCOFI/UCSD)*
 
-**Abstract:** This project seeks to leverage genetic metabarcoding data collected from quarterly cruises in the California current to search for microbial 'signatures' of presence and abundance of large marine mammals, with an initial focus on common species of whales. The project will involve using compositional data analysis and dimension reduction techniques to formulate a model of mammal abundance utilizing a sparse subset of microbial taxa and other covariates. There is also potential for the development of novel methodology. It is anticipated that the work will produce one or more journal publications.
-
-**Frost 2024 summer research positions**: Students working on this project during summer will focus specifically on the development, implementation, and benchmarking of a novel algorithm for supervised dimension reduction of compositional data adjusted for covariate effects, and can expect to gain expertise in statistical computing.
+**Project status**: currently active, with additional positions available through the Frost summer research program; \[[apply](https://forms.gle/uPUDvwNx857KY4Y26)\] by March 1, 2024.
 
 **Suggested preparation:** intermediate-level proficiency in R (STAT 331 or similar); regression analysis (STAT 334 or similar) and multivariate analysis (STAT 419 or similar) preferred but not required.
 
-**Other notes**: collaboration with Erin Satterthwaite (Sea Grant/CalCOFI/UCSD).
 
-## 2022-2023 
+#### **Abstract** 
+This project seeks to leverage genetic metabarcoding data collected from quarterly cruises in the California current to search for microbial 'signatures' of presence and abundance of large marine mammals, with an initial focus on common species of whales. The project will involve using compositional data analysis and dimension reduction techniques to formulate a model of mammal abundance utilizing a sparse subset of microbial taxa and other covariates. There is also potential for the development of novel methodology. It is anticipated that the work will produce one or more journal publications.
 
-## Student capstone projects
+This is an ongoing project. Students working on this project during summer will focus specifically on the development, implementation, and benchmarking of a novel algorithm for supervised dimension reduction of compositional data adjusted for covariate effects, and can expect to gain expertise in statistical computing.
 
-I co/led instruction of a year-long capstone in 2021-2022 and 2022-2023 with the goal of engaging undergraduate students in collaborative research. In the two years I oversaw the course we supported 28 projects spanning a wide range of domain and industry applications. A few of these projects extended beyond the scope of the class.
+*Keywords: environmental genomics; metabarcoding; dimension reduction; latent regression; compositional data analysis.*
 
-Conference participation:
+## 2022-2023
 
--   S. Rumsey, E. Ho, C. Zheng, N. Setiawan, J. Park, M. Elcheikhali, T. D. Ruiz, A. Kolbeinsson, E. J. Daza (2023). Identifying case onset points for early detection of influenza-like illness. *ACM SIGKDD'23 Southern California Data Science Day.* Poster presentation.
+### Student capstone projects
 
--   L. Umsted, J. Liu, P. Trujillo, E. Burrell, L. B. Lancheros, T. D. Ruiz, E. Noi, E. Zhou, S. Dodge (2023). Understanding and modeling human mobility response to California wildfires. *ACM SIGKDD'23 Southern California Data Science Day.* Poster presentation.
+I co/led instruction of a year-long capstone in 2021-2022 and 2022-2023 with the goal of engaging undergraduate students in collaborative research. In the two years I oversaw the course we supported 28 \[[projects](https://pstat197.tdruiz.com/projects/projects-22-23.html)\] spanning a wide range of domain and industry applications. A few of these projects extended beyond the scope of the class.
 
--   M. Gupta, A. Adams, E. Satterthwaite, T. D. Ruiz (2022). A scrollytelling primer on hypoxia: developing a data storytelling tool to communicate ocean observing data to California citizens. *CalCOFI Conference 2022: Innovative Techniques and Novel Applications of Time Series Data to Marine Resource Management.* Contributed presentation.
+-   S. Rumsey, E. Ho, C. Zheng, N. Setiawan, J. Park, M. Elcheikhali, T. D. Ruiz, A. Kolbeinsson, E. J. Daza (2023). Identifying case onset points for early detection of influenza-like illness. *ACM SIGKDD'23 Southern California Data Science Day.* Poster presentation. \[[abstract](https://drive.google.com/file/d/1mUdp1IfIl41d4oWxOL9ri-ZlG6rz1sf8/view?usp=share_link)\]
+
+-   L. Umsted, J. Liu, P. Trujillo, E. Burrell, L. B. Lancheros, T. D. Ruiz, E. Noi, E. Zhou, S. Dodge (2023). Understanding and modeling human mobility response to California wildfires. *ACM SIGKDD'23 Southern California Data Science Day.* Poster presentation. \[[abstract](https://drive.google.com/file/d/1RgjaAakLtIK50k1pLrK_0GpZ18_4x5YA/view?usp=share_link)\]
+
+-   M. Gupta, A. Adams, E. Satterthwaite, T. D. Ruiz (2022). A scrollytelling primer on hypoxia: developing a data storytelling tool to communicate ocean observing data to California citizens. *CalCOFI Conference 2022: Innovative Techniques and Novel Applications of Time Series Data to Marine Resource Management.* Contributed presentation. \[[data storytelling](https://calcofi.io/hypoxia-story/)\]

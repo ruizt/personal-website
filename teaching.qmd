@@ -1,8 +1,11 @@
 ---
 title: "Teaching"
+date: last-modified
+date-format: "MMMM YYYY"
+published-title: "Updated"
 ---
 
-Much of my experience teaching statistics is concentrated around methods, applications, and data science, but I have broad interests. A full list of courses I've taught follows; I'm happy to share materials for instructional purposes on request.
+My teaching focuses on statistical methods, applied statistics, and data science, but I have broad interests. A full list of courses I've taught follows. For more recent courses, student-facing materials can be found on the course websites. I'm happy to share additional materials for instructional purposes on request.
 
 ### Cal Poly
 

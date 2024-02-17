@@ -2,6 +2,9 @@
 title: "Research"
 editor: visual
 bibliography: refs.bib
+date: last-modified
+date-format: "MMMM YYYY"
+published-title: "Updated"
 ---
 
 I'm interested broadly in models and methods for correlated and high-dimensional data with applications in life sciences. I also enjoy data analysis projects, especially those with spatial and temporal aspects. My graduate research focused on model selection and inference of causal networks in the context of multiple time series analysis. I'm currently exploring methods for the analysis of genetic metabarcoding data from ecological surveys, and developing several new research directions and collaborative projects with opportunities for student contributions.
@@ -20,5 +23,5 @@ High-dimensional time series --- serial observations of a large number of measur
 
 Agricultural epidemics driven by aerially-dispersed pathogens exhibit spatially anisotropic patterns of expansion from epicenters due to varying windspeeds and landscape features. Covariates that potentially explain patterns of anisotropy are readily available from public data sources, and thus allow for several approaches to modeling disease spread to potentially aid in identifying effective management interventions.
 
-6.  A. M. E. Ojwang, **T. D. Ruiz**, S. Bhattacharyya, S. Chatterjee, P. S. Ojiambo, D. H. Gent (2021). A general framework for spatio-temporal modeling of epidemics with multiple epicenters: application to an aerially dispersed plant pathogen. *Frontiers in Applied Mathematics and Statistics.* \[[paper](https://doi.org/10.3389/fams.2021.721352)\]
-7.  D. H. Gent, S. Bhattacharyya, **T. D. Ruiz** (2019). Prediction of spread and regional development of hop powdery mildew: a network analysis. *Phytopathology.* \[[paper](https://doi.org/10.1094/PHYTO-12-18-0483-R)\]
+1.  A. M. E. Ojwang, **T. D. Ruiz**, S. Bhattacharyya, S. Chatterjee, P. S. Ojiambo, D. H. Gent (2021). A general framework for spatio-temporal modeling of epidemics with multiple epicenters: application to an aerially dispersed plant pathogen. *Frontiers in Applied Mathematics and Statistics.* \[[paper](https://doi.org/10.3389/fams.2021.721352)\]
+2.  D. H. Gent, S. Bhattacharyya, **T. D. Ruiz** (2019). Prediction of spread and regional development of hop powdery mildew: a network analysis. *Phytopathology.* \[[paper](https://doi.org/10.1094/PHYTO-12-18-0483-R)\]
