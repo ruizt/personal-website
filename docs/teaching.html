@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -45,7 +45,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -54,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -77,9 +84,9 @@ gtag('config', 'G-H3YKZX4J88', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Trevor D. Ruiz</span>
     </a>
@@ -91,21 +98,21 @@ gtag('config', 'G-H3YKZX4J88', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" rel="" target="" aria-current="page">
- <span class="menu-text">Teaching</span></a>
+    <a class="nav-link active" href="./teaching.html" aria-current="page"> 
+<span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html" rel="" target="">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./students.html" rel="" target="">
- <span class="menu-text">Student projects</span></a>
+    <a class="nav-link" href="./students.html"> 
+<span class="menu-text">Student projects</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -118,9 +125,23 @@ gtag('config', 'G-H3YKZX4J88', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cal-poly" id="toc-cal-poly" class="nav-link active" data-scroll-target="#cal-poly">Cal Poly</a></li>
-  <li><a href="#uc-santa-barbara" id="toc-uc-santa-barbara" class="nav-link" data-scroll-target="#uc-santa-barbara">UC Santa Barbara</a></li>
-  <li><a href="#oregon-state-university" id="toc-oregon-state-university" class="nav-link" data-scroll-target="#oregon-state-university">Oregon State University</a></li>
+  <li><a href="#cal-poly" id="toc-cal-poly" class="nav-link active" data-scroll-target="#cal-poly">Cal Poly</a>
+  <ul class="collapse">
+  <li><a href="#stat218" id="toc-stat218" class="nav-link" data-scroll-target="#stat218">[STAT218] Applied statistics for life sciences</a></li>
+  <li><a href="#stat425" id="toc-stat425" class="nav-link" data-scroll-target="#stat425">[STAT425] Probability theory</a></li>
+  </ul></li>
+  <li><a href="#uc-santa-barbara" id="toc-uc-santa-barbara" class="nav-link" data-scroll-target="#uc-santa-barbara">UC Santa Barbara</a>
+  <ul class="collapse">
+  <li><a href="#pstat197" id="toc-pstat197" class="nav-link" data-scroll-target="#pstat197">[PSTAT197] Data science capstone</a></li>
+  <li><a href="#pstat100" id="toc-pstat100" class="nav-link" data-scroll-target="#pstat100">[PSTAT100] Data science concepts and analysis</a></li>
+  <li><a href="#pstat131" id="toc-pstat131" class="nav-link" data-scroll-target="#pstat131">[PSTAT131/231] Statistical machine learning</a></li>
+  <li><a href="#pstat126" id="toc-pstat126" class="nav-link" data-scroll-target="#pstat126">[PSTAT126] Regression analysis</a></li>
+  <li><a href="#pstat120b" id="toc-pstat120b" class="nav-link" data-scroll-target="#pstat120b">[PSTAT120B] Probability and statistics</a></li>
+  </ul></li>
+  <li><a href="#oregon-state-university" id="toc-oregon-state-university" class="nav-link" data-scroll-target="#oregon-state-university">Oregon State University</a>
+  <ul class="collapse">
+  <li><a href="#st351-352" id="toc-st351-352" class="nav-link" data-scroll-target="#st351-352">[ST351-352] Introduction to statistical methods</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -148,54 +169,56 @@ gtag('config', 'G-H3YKZX4J88', { 'anonymize_ip': true});
   </div>
   
 
+
 </header>
 
+
 <p>My teaching focuses on statistical methods, applied statistics, and data science, but I have broad interests. A full list of courses I’ve taught follows. For more recent courses, student-facing materials can be found on the course websites. I’m happy to share additional materials for instructional purposes on request.</p>
-<section id="cal-poly" class="level3">
-<h3 class="anchored" data-anchor-id="cal-poly">Cal Poly</h3>
-<section id="stat218" class="level4">
-<h4 class="anchored" data-anchor-id="stat218"><strong>Applied statistics for life sciences</strong> [STAT218] [<a href="https://stat218.tdruiz.com/">website</a>]</h4>
+<section id="cal-poly" class="level2">
+<h2 class="anchored" data-anchor-id="cal-poly">Cal Poly</h2>
+<section id="stat218" class="level3">
+<h3 class="anchored" data-anchor-id="stat218">[<a href="https://stat218.tdruiz.com">STAT218</a>] Applied statistics for life sciences</h3>
 <p><em>Winter 2024, Spring 2024</em></p>
 <p>Data collection and experimental design, descriptive statistics, confidence intervals, parametric and non parametric one and two-sample hypothesis tests, analysis of variance, correlation, simple linear regression, chi-square tests. Applications of statistics to the life sciences. Substantial use of statistical software.</p>
 </section>
-<section id="stat425" class="level4">
-<h4 class="anchored" data-anchor-id="stat425"><strong>Probability theory</strong> [STAT425] [<a href="https://stat425.tdruiz.com/">website</a>]</h4>
+<section id="stat425" class="level3">
+<h3 class="anchored" data-anchor-id="stat425">[<a href="https://stat425.tdruiz.com">STAT425</a>] Probability theory</h3>
 <p><em>Fall 2023, Fall 2024</em></p>
 <p>Basic probability theory, combinatorial methods, independence, conditional and marginal probability, probability models for random phenomena, random variables, probability distributions, distributions of functions of random variables, mathematical expectation, covariance and correlation, conditional expectation.</p>
 </section>
 </section>
-<section id="uc-santa-barbara" class="level3">
-<h3 class="anchored" data-anchor-id="uc-santa-barbara">UC Santa Barbara</h3>
-<section id="pstat197" class="level4">
-<h4 class="anchored" data-anchor-id="pstat197"><strong>Data science capstone</strong> [PSTAT197] [<a href="https://pstat197.tdruiz.com/">website</a>]</h4>
+<section id="uc-santa-barbara" class="level2">
+<h2 class="anchored" data-anchor-id="uc-santa-barbara">UC Santa Barbara</h2>
+<section id="pstat197" class="level3">
+<h3 class="anchored" data-anchor-id="pstat197">[<a href="https://pstat197.tdruiz.com">PSTAT197</a>] Data science capstone</h3>
 <p><em>Winter 2022, Spring 2022, Fall 2022, Winter 2023, Spring 2023</em></p>
 <p>A preparatory course in data science topics and collaborative research skills (PSTAT197A/CMPSC190DD, offered fall term) and two experiential learning courses in which students work in teams on interdisciplinary projects sponsored by an external partner and advised by a technical specialist (PSTAT197B-C/CMPSC190DE-DF, offered winter and spring terms). Project teams establish a group contract outlining basic agreements pertaining to the collaboration and agree on outputs to produce for the sponsor by the end of the project – typically software, documentation, and a presentation. The course sequence culminates with a public showcase of student work.</p>
 </section>
-<section id="pstat100" class="level4">
-<h4 class="anchored" data-anchor-id="pstat100"><strong>Data science concepts and analysis</strong> [PSTAT100] [<a href="https://pstat100.tdruiz.com/">website</a>]</h4>
+<section id="pstat100" class="level3">
+<h3 class="anchored" data-anchor-id="pstat100">[<a href="https://pstat100.tdruiz.com">PSTAT100</a>] Data science concepts and analysis</h3>
 <p><em>Spring 2021, Winter 2022, Spring 2022, Spring 2023</em></p>
 <p>A hands-on introduction to data science intended for intermediate-level students from any discipline with some exposure to probability and basic computing skills, but few or no upper-division courses in statistics or computer science. The course introduces central concepts in statistics – such as sampling variation, uncertainty, and inference – in an applied setting together with techniques for data exploration and analysis. Applications emphasize end-to-end data analyses.</p>
 </section>
-<section id="pstat131" class="level4">
-<h4 class="anchored" data-anchor-id="pstat131"><strong>Statistical machine learning</strong> [PSTAT131/231]</h4>
+<section id="pstat131" class="level3">
+<h3 class="anchored" data-anchor-id="pstat131">[PSTAT131/231] Statistical machine learning</h3>
 <p><em>Winter 2021, Spring 2021</em></p>
 <p>Statistical Machine Learning is used to discover patterns and relationships in large data sets. Topics include: data exploration, classification and regression tress, random forests, clustering and association rules, building predictive models focusing on model selection, and model comparison and performance evaluation. Emphasis is on concepts, methods and data analysis, and students are expected to complete a significant class project, individual or team based, using real-world data.</p>
 </section>
-<section id="pstat126" class="level4">
-<h4 class="anchored" data-anchor-id="pstat126"><strong>Regression analysis</strong> [PSTAT126]</h4>
+<section id="pstat126" class="level3">
+<h3 class="anchored" data-anchor-id="pstat126">[PSTAT126] Regression analysis</h3>
 <p><em>Summer 2021, Fall 2021</em></p>
 <p>A first course in linear regression for statistics majors covering both theory and applications with a strong emphasis on statistical computing and visualization techniques in R using tidyverse programming. Tools for reproducible analysis are also introduced. The course covers the linear model in matrix form, parameter estimation and interpretation, residual diagnostics, statistical inference, case influence statistics and outlier detection, common data transformations, categorical variables and interaction terms, and model selection and prediction.</p>
 </section>
-<section id="pstat120b" class="level4">
-<h4 class="anchored" data-anchor-id="pstat120b"><strong>Probability and statistics</strong> [PSTAT120B]</h4>
+<section id="pstat120b" class="level3">
+<h3 class="anchored" data-anchor-id="pstat120b">[PSTAT120B] Probability and statistics</h3>
 <p><em>Fall 2020, Winter 2021, Summer 2021, Fall 2021</em></p>
 <p>Distribution of sample mean and sample variance; t, chi-squared and F distributions; summarizing data by statistics and graphs; estimation theory for single samples: sufficiency, efficiency, consistency, method of moments, maximum likelihood; hypothesis testing: likelihood ratio test; confidence intervals.</p>
 </section>
 </section>
-<section id="oregon-state-university" class="level3">
-<h3 class="anchored" data-anchor-id="oregon-state-university">Oregon State University</h3>
-<section id="st351-352" class="level4">
-<h4 class="anchored" data-anchor-id="st351-352"><strong>Introduction to statistical methods</strong> [ST351-352]</h4>
+<section id="oregon-state-university" class="level2">
+<h2 class="anchored" data-anchor-id="oregon-state-university">Oregon State University</h2>
+<section id="st351-352" class="level3">
+<h3 class="anchored" data-anchor-id="st351-352">[ST351-352] Introduction to statistical methods</h3>
 <p><em>Spring 2018, Summer 2018</em></p>
 <p>Study designs, descriptive statistics, collecting and recording data, probability distributions, sampling distributions for means and proportions, hypothesis testing and confidence intervals for means and proportions in one- and two-sample inference, and chi-square tests.&nbsp;</p>
 
@@ -283,10 +306,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -296,8 +318,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -310,6 +341,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -353,6 +503,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -378,6 +529,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -443,12 +620,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">© 2024 Trevor Ruiz</div>
+    <div class="nav-footer-center">
+<p>© 2024 Trevor Ruiz</p>
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 
