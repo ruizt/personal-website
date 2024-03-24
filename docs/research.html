@@ -76,35 +76,6 @@ gtag('js', new Date());
 gtag('config', 'G-H3YKZX4J88', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -134,10 +105,6 @@ window.Quarto = {
     <a class="nav-link active" href="./research.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./students.html"> 
-<span class="menu-text">Student projects</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -154,8 +121,13 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#high-dimensional-time-series" id="toc-high-dimensional-time-series" class="nav-link active" data-scroll-target="#high-dimensional-time-series">High-dimensional time series</a></li>
-  <li><a href="#agricultural-epidemiology" id="toc-agricultural-epidemiology" class="nav-link" data-scroll-target="#agricultural-epidemiology">Agricultural epidemiology</a></li>
+  <li><a href="#current-projects" id="toc-current-projects" class="nav-link active" data-scroll-target="#current-projects">Current projects</a></li>
+  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
+  <li><a href="#student-research" id="toc-student-research" class="nav-link" data-scroll-target="#student-research">Student research</a>
+  <ul class="collapse">
+  <li><a href="#project-ideas" id="toc-project-ideas" class="nav-link" data-scroll-target="#project-ideas">Project ideas</a></li>
+  <li><a href="#student-presentations-and-publications" id="toc-student-presentations-and-publications" class="nav-link" data-scroll-target="#student-presentations-and-publications">Student presentations and publications</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -175,7 +147,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Updated</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 2024</p>
+      <p class="date">March 2024</p>
     </div>
   </div>
   
@@ -187,27 +159,71 @@ window.Quarto = {
 </header>
 
 
-<p>I’m interested broadly in models and methods for correlated and high-dimensional data with applications in life sciences. I also enjoy data analysis projects, especially those with spatial and temporal aspects. My graduate research focused on model selection and inference of causal networks in the context of multiple time series analysis. I’m currently exploring methods for the analysis of genetic metabarcoding data from ecological surveys, and developing several new research directions and collaborative projects with opportunities for student contributions.</p>
-<section id="high-dimensional-time-series" class="level2">
-<h2 class="anchored" data-anchor-id="high-dimensional-time-series">High-dimensional time series</h2>
-<p>High-dimensional time series — serial observations of a large number of measurements — are often modeled using an autoregressive framework for representing serial dependence within and between series. The model parametrization for this approach is dense, requiring a minimum of <span class="math inline">\(p^2\)</span> parameters for a <span class="math inline">\(p\)</span>-variate time series. Many of these parameters are negligibly small or contribute minimally to model fit. Filtering out those parameters at the model fitting stage and selecting a reduced model is a challenge in practice with finite samples. My work in this area focuses on the use of resampling and stability methods with regularization for model selection, especially in the context of models for count data; applications include estimating ecological interaction networks and neural functional connectivity.</p>
-<ol type="1">
-<li><strong>T. D. Ruiz</strong>, S. Bhattacharyya, S. C. Emerson. Sparse estimation of parameter support sets for generalized vector autoregressions by resampling and model aggregation. [<a href="https://doi.org/10.48550/arXiv.2307.09684">preprint</a>]</li>
-<li><strong>T. D. Ruiz</strong>, S. Bhattacharyya, S. C. Emerson. A graphical sufficient condition for the stability of first-order log-linear Poisson generalized vector autoregressive processes. [<a href="https://dx.doi.org/10.2139/ssrn.4283477">preprint</a>]</li>
-<li><strong>T. D. Ruiz</strong>, S. Bhattacharyya, M. Balasubramanian, K. Bouchard (2020). Sparse and low-bias estimation of high dimensional vector autoregressive models. <em>Proceedings of the 2nd Conference on Learning for Dynamics and Control</em> in <em>Proceedings of Machine Learning Research.</em> [<a href="https://proceedings.mlr.press/v120/ruiz20a.html">paper</a>]</li>
-<li>M. Balasubramanian, <strong>T. D. Ruiz</strong>, B. Cook, M. Prabhat, S. Bhattacharyya, A. Shrivastava, K. E. Bouchard (2020). Scaling of union of intersections for inference of granger causal networks from observational data. <em>IEEE International Parallel and Distributed Processing Symposium.</em> [<a href="https://doi.org/10.1109/IPDPS47924.2020.00036">paper</a>]</li>
-<li><strong>T. D. Ruiz</strong> (2020). Estimation and sparse selection of conditional probability models for vector time series. <em>Oregon State University.</em> [<a href="https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/k0698g13s">thesis</a>]</li>
+<p>I’m interested broadly in statistical models and methods for correlated and high-dimensional data with applications in life sciences. I also enjoy data analysis and collaborative research projects involving applied statistical modeling.</p>
+<p>I’m eager to involve student contributors in my research and aim to work on topics/projects with aspects that I think would be accessible to students. For this reason, my current projects are collaborative and focus on specific applications or data analyses that would be accessible to undergraduate students but also have interesting methodological aspects and therein some potential to expand into methods projects suitable for graduate-level research.</p>
+<section id="current-projects" class="level2">
+<h2 class="anchored" data-anchor-id="current-projects">Current projects</h2>
+<section id="using-environmental-dna-to-identify-microbial-taxa-associated-with-marine-mammal-abundances" class="level4">
+<h4 class="anchored" data-anchor-id="using-environmental-dna-to-identify-microbial-taxa-associated-with-marine-mammal-abundances">Using environmental DNA to identify microbial taxa associated with marine mammal abundances</h4>
+<p><em>Collaboration with Erin Satterthwaite (Sea Grant/CalCOFI/UCSD)</em></p>
+<p>This project leverages environmental metabarcoding data collected from quarterly cruises in the California current to identify microbial and microorganism ‘signatures’ of presence and abundance of large marine mammals. We utilize 16S and 18S r-RNA sequencing data obtained from ocean water samples collected at multiple depths along transects in the <a href="https://calcofi.org/sampling-info/station-positions/">CalCOFI sampling grid</a> as part of the NOAA-CalCOFI Ocean Genomics (NCOG) project together with density estimates computed from visual sightings of common whale species along the same transects. We formulate a log-contrast-type model relating species density to relative abundances of amplicon sequence variants (ASVs) after adjusting for seasonality and environmental conditions and develop a sparse estimation procedure to identify small subsets of ASVs associated with changes in species density.</p>
+</section>
+<section id="modeling-baseline-metabolic-needs-of-pregnant-rattlesnakes-from-high-resolution-time-series-of-body-temperatures" class="level4">
+<h4 class="anchored" data-anchor-id="modeling-baseline-metabolic-needs-of-pregnant-rattlesnakes-from-high-resolution-time-series-of-body-temperatures">Modeling baseline metabolic needs of pregnant rattlesnakes from high resolution time series of body temperatures</h4>
+<p><em>Collaboration with Haley Moniz (Biological Sciences, Cal Poly)</em></p>
+<p>This project seeks to explore the effect of pregnancy on metabolism among rattlesnakes. Beaupre &amp; Duvall (1998) measured oxygen consumption in male, non-pregnant female, and (early) pregnant female rattlesnakes and developed general equations for calculating resting metabolic rate given a snake’s body temperature and weight. This project will leverage high-resolution time series of body temperatures collected from pregnant and non-pregnant female rattlesnakes over a period of several months to estimate metabolic rate fluctuations over time using the above-mentioned framework, and develop exploratory and statistical analyses aimed at (1) identifying metabolic differences between pregnant and non-pregnant rattlesnakes and (2) understanding temporal shifts in metabolism associated with seasonal and lifecycle factors.</p>
+</section>
+</section>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<p><em>Listed in reverse chronological order.</em></p>
+<ol reversed="">
+<li>
+<strong>T. D. Ruiz</strong>, S. Bhattacharyya, S. C. Emerson (2023). Sparse estimation of parameter support sets for generalized vector autoregressions by resampling and model aggregation. [<a href="https://doi.org/10.48550/arXiv.2307.09684">preprint</a>]
+</li>
+<li>
+<strong>T. D. Ruiz</strong>, S. Bhattacharyya, S. C. Emerson (2022). A graphical sufficient condition for the stability of first-order log-linear Poisson generalized vector autoregressive processes. [<a href="https://dx.doi.org/10.2139/ssrn.4283477">preprint</a>]
+</li>
+<li>
+A. M. E. Ojwang, <strong>T. D. Ruiz</strong>, S. Bhattacharyya, S. Chatterjee, P. S. Ojiambo, D. H. Gent (2021). A general framework for spatio-temporal modeling of epidemics with multiple epicenters: application to an aerially dispersed plant pathogen. <em>Frontiers in Applied Mathematics and Statistics.</em> [<a href="https://doi.org/10.3389/fams.2021.721352">paper</a>]
+</li>
+<li>
+<strong>T. D. Ruiz</strong>, S. Bhattacharyya, M. Balasubramanian, K. Bouchard (2020). Sparse and low-bias estimation of high dimensional vector autoregressive models. <em>Proceedings of the 2nd Conference on Learning for Dynamics and Control</em> in <em>Proceedings of Machine Learning Research.</em> [<a href="https://proceedings.mlr.press/v120/ruiz20a.html">paper</a>]
+</li>
+<li>
+M. Balasubramanian, <strong>T. D. Ruiz</strong>, B. Cook, M. Prabhat, S. Bhattacharyya, A. Shrivastava, K. E. Bouchard (2020). Scaling of union of intersections for inference of granger causal networks from observational data. <em>IEEE International Parallel and Distributed Processing Symposium.</em> [<a href="https://doi.org/10.1109/IPDPS47924.2020.00036">paper</a>]
+</li>
+<li>
+<strong>T. D. Ruiz</strong> (2020). Estimation and sparse selection of conditional probability models for vector time series. <em>Oregon State University.</em> [<a href="https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/k0698g13s">thesis</a>]
+</li>
+<li>
+<strong>T. D. Ruiz</strong> &amp; C. L. Ellison (2020). Spatiotemporally coherent tensor decompositions for the analysis of trajectory data. <em>Engineer Research and Development Center</em> ERDC/GRL TN-20-3. [<a href="https://erdc-library.erdc.dren.mil/jspui/bitstream/11681/37355/1/ERDC-GRL%20TN-20-3.pdf">technical note</a>]
+</li>
+<li>
+D. H. Gent, S. Bhattacharyya, <strong>T. D. Ruiz</strong> (2019). Prediction of spread and regional development of hop powdery mildew: a network analysis. <em>Phytopathology.</em> [<a href="https://doi.org/10.1094/PHYTO-12-18-0483-R">paper</a>]
+</li>
 </ol>
 </section>
-<section id="agricultural-epidemiology" class="level2">
-<h2 class="anchored" data-anchor-id="agricultural-epidemiology">Agricultural epidemiology</h2>
-<p>Agricultural epidemics driven by aerially-dispersed pathogens exhibit spatially anisotropic patterns of expansion from epicenters due to varying windspeeds and landscape features. Covariates that potentially explain patterns of anisotropy are readily available from public data sources, and thus allow for several approaches to modeling disease spread to potentially aid in identifying effective management interventions.</p>
-<ol type="1">
-<li>A. M. E. Ojwang, <strong>T. D. Ruiz</strong>, S. Bhattacharyya, S. Chatterjee, P. S. Ojiambo, D. H. Gent (2021). A general framework for spatio-temporal modeling of epidemics with multiple epicenters: application to an aerially dispersed plant pathogen. <em>Frontiers in Applied Mathematics and Statistics.</em> [<a href="https://doi.org/10.3389/fams.2021.721352">paper</a>]</li>
-<li>D. H. Gent, S. Bhattacharyya, <strong>T. D. Ruiz</strong> (2019). Prediction of spread and regional development of hop powdery mildew: a network analysis. <em>Phytopathology.</em> [<a href="https://doi.org/10.1094/PHYTO-12-18-0483-R">paper</a>]</li>
-</ol>
+<section id="student-research" class="level2">
+<h2 class="anchored" data-anchor-id="student-research">Student research</h2>
+<p>If you’re interested in working with me, please get in touch. I often (though not always) have opportunities associated with current projects, as well as ideas for M.S. theses and independent study under STAT400/STAT500.</p>
+<section id="project-ideas" class="level3">
+<h3 class="anchored" data-anchor-id="project-ideas">Project ideas</h3>
+<section id="permutation-inference-for-functional-data" class="level4">
+<h4 class="anchored" data-anchor-id="permutation-inference-for-functional-data">Permutation inference for functional data</h4>
+<p>In the functional data analysis setting, responses are continuous functions rather than scalars/vectors. In practice, functional responses are measured at a discrete resolution and must first be estimated using smoothing approximation techniques prior to data analysis. In many studies, high-resolution functional measurements are obtained on relatively few observational/experimental units, with relatively more attention given to the functional sampling resolution than to replication, effectively prioritizing response approximation quality over statistical inference. This project would explore the use of permutation inference for functional data with small sample sizes. Methods would apply permutation alternatives to standard parametric multivariate statistical tests for two-sample inference and analysis of variance to the coefficients of functional principal components. While this idea has been proposed in prior literature, it is relatively under-explored, leaving room for original contributions. The project would investigate, in particular, the impact of functional approximations on statistical power.</p>
+</section>
+</section>
+<section id="student-presentations-and-publications" class="level3">
+<h3 class="anchored" data-anchor-id="student-presentations-and-publications">Student presentations and publications</h3>
+<ul>
+<li><p>S. Rumsey, E. Ho, C. Zheng, N. Setiawan, J. Park, M. Elcheikhali, T. D. Ruiz, A. Kolbeinsson, E. J. Daza (2023). Identifying case onset points for early detection of influenza-like illness. <em>ACM SIGKDD’23 Southern California Data Science Day.</em> Poster presentation. [<a href="https://drive.google.com/file/d/1mUdp1IfIl41d4oWxOL9ri-ZlG6rz1sf8/view?usp=share_link">abstract</a>]</p></li>
+<li><p>L. Umsted, J. Liu, P. Trujillo, E. Burrell, L. B. Lancheros, T. D. Ruiz, E. Noi, E. Zhou, S. Dodge (2023). Understanding and modeling human mobility response to California wildfires. <em>ACM SIGKDD’23 Southern California Data Science Day.</em> Poster presentation. [<a href="https://drive.google.com/file/d/1RgjaAakLtIK50k1pLrK_0GpZ18_4x5YA/view?usp=share_link">abstract</a>]</p></li>
+<li><p>M. Gupta, A. Adams, E. Satterthwaite, T. D. Ruiz (2022). A scrollytelling primer on hypoxia: developing a data storytelling tool to communicate ocean observing data to California citizens. <em>CalCOFI Conference 2022: Innovative Techniques and Novel Applications of Time Series Data to Marine Resource Management.</em> Contributed presentation. [<a href="https://calcofi.io/hypoxia-story/">data storytelling</a>]</p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

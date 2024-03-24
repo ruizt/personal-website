@@ -16,7 +16,6 @@ website:
     left:
       - teaching.qmd
       - research.qmd
-      - students.qmd
 
 format:
   html:
