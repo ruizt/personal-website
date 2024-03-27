@@ -18,7 +18,7 @@ about:
       href: https://github.com/ruizt
 ---
 
-I'm an Assistant Professor in the Statistics Department at Cal Poly, San Luis Obispo. My work is motivated by my interest in the development and application of statistical methods for the sciences and a commitment to teaching, mentoring, and collaboration.
+I'm an Assistant Professor in the Statistics Department at Cal Poly, San Luis Obispo. My work is motivated by my interest in the development and application of statistical methods for the sciences and commitment to teaching, mentoring, and collaboration.
 
 ## Appointments
 
