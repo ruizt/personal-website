@@ -7,17 +7,17 @@ date-format: "MMMM YYYY"
 published-title: "Updated"
 ---
 
-I'm interested broadly in statistical models and methods for correlated and high-dimensional data with applications in life sciences. I also enjoy data analysis and collaborative research projects involving applied statistical modeling.
+I'm interested in statistical methods for correlated and high-dimensional data with applications in life sciences. I also enjoy data analysis and collaborative research projects involving applied statistical modeling.
 
-I'm eager to involve student contributors in my research and aim to work on topics/projects with aspects that I think would be accessible to students. For this reason, my current projects are collaborative and focus on specific applications or data analyses that would be accessible to undergraduate students but also have interesting methodological aspects and therein some potential to expand into methods projects suitable for graduate-level research.
+I'm eager to include student contributors in my research and aim to work on topics/projects with aspects that I think would be accessible to students. For this reason, my current projects are collaborative and focus on specific applications or data analyses that would be accessible to undergraduate students but also have interesting methodological aspects and therein some potential to expand into methods projects suitable for graduate-level research.
 
 ## Current projects
-
-
 
 #### Using environmental DNA to identify microbial taxa associated with marine mammal abundances
 
 *Collaboration with Erin Satterthwaite (Sea Grant/CalCOFI/UCSD)*
+
+*Student contributors (alphabetical order): Katherine Chan; Gabrielle Low; Nicholas Patrick; Samantha Ward*
 
 This project leverages environmental metabarcoding data collected from quarterly cruises in the California current to identify microbial and microorganism 'signatures' of presence and abundance of large marine mammals. We utilize 16S and 18S r-RNA sequencing data obtained from ocean water samples collected at multiple depths along transects in the [CalCOFI sampling grid](https://calcofi.org/sampling-info/station-positions/) as part of the NOAA-CalCOFI Ocean Genomics (NCOG) project together with density estimates computed from visual sightings of common whale species along the same transects. We formulate a log-contrast-type model relating species density to relative abundances of amplicon sequence variants (ASVs) after adjusting for seasonality and environmental conditions and develop a sparse estimation procedure to identify small subsets of ASVs associated with changes in species density.
 
@@ -33,37 +33,23 @@ This project seeks to explore the effect of pregnancy on metabolism among rattle
 
 <ol reversed>
 
-<li>  
-**T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson (2023). Sparse estimation of parameter support sets for generalized vector autoregressions by resampling and model aggregation. \[[preprint](https://doi.org/10.48550/arXiv.2307.09684)\] 
-</li>
+<li>H. A. Moniz, J. H. Buck, H. L. Crowell, S. M. Goetz, **T. D. Ruiz**, S. M. Boback, E. N. Taylor (2024). Reproductive state impacts the thermal ecology of female rattlesnakes at a high-elevation site. *In preparation.*</li>
 
-<li>
-**T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson (2022). A graphical sufficient condition for the stability of first-order log-linear Poisson generalized vector autoregressive processes. \[[preprint](https://dx.doi.org/10.2139/ssrn.4283477)\]
-</li>
+<li>**T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson (2023). Sparse estimation of parameter support sets for generalized vector autoregressions by resampling and model aggregation. \[[preprint](https://doi.org/10.48550/arXiv.2307.09684)\]</li>
 
-<li> 
-A. M. E. Ojwang, **T. D. Ruiz**, S. Bhattacharyya, S. Chatterjee, P. S. Ojiambo, D. H. Gent (2021). A general framework for spatio-temporal modeling of epidemics with multiple epicenters: application to an aerially dispersed plant pathogen. *Frontiers in Applied Mathematics and Statistics.* \[[paper](https://doi.org/10.3389/fams.2021.721352)\]
-</li>
+<li>**T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson (2022). A graphical sufficient condition for the stability of first-order log-linear Poisson generalized vector autoregressive processes. \[[preprint](https://dx.doi.org/10.2139/ssrn.4283477)\]</li>
 
-<li> 
-**T. D. Ruiz**, S. Bhattacharyya, M. Balasubramanian, K. Bouchard (2020). Sparse and low-bias estimation of high dimensional vector autoregressive models. *Proceedings of the 2nd Conference on Learning for Dynamics and Control* in *Proceedings of Machine Learning Research.* \[[paper](https://proceedings.mlr.press/v120/ruiz20a.html)\]
-</li>
+<li>A. M. E. Ojwang, **T. D. Ruiz**, S. Bhattacharyya, S. Chatterjee, P. S. Ojiambo, D. H. Gent (2021). A general framework for spatio-temporal modeling of epidemics with multiple epicenters: application to an aerially dispersed plant pathogen. *Frontiers in Applied Mathematics and Statistics.* \[[paper](https://doi.org/10.3389/fams.2021.721352)\]</li>
 
-<li>
-M. Balasubramanian, **T. D. Ruiz**, B. Cook, M. Prabhat, S. Bhattacharyya, A. Shrivastava, K. E. Bouchard (2020). Scaling of union of intersections for inference of granger causal networks from observational data. *IEEE International Parallel and Distributed Processing Symposium.* \[[paper](https://doi.org/10.1109/IPDPS47924.2020.00036)\]
-</li>
+<li>**T. D. Ruiz**, S. Bhattacharyya, M. Balasubramanian, K. Bouchard (2020). Sparse and low-bias estimation of high dimensional vector autoregressive models. *Proceedings of the 2nd Conference on Learning for Dynamics and Control* in *Proceedings of Machine Learning Research.* \[[paper](https://proceedings.mlr.press/v120/ruiz20a.html)\]</li>
 
-<li>
-**T. D. Ruiz** (2020). Estimation and sparse selection of conditional probability models for vector time series. *Oregon State University.* \[[thesis](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/k0698g13s)\]
-</li>
+<li>M. Balasubramanian, **T. D. Ruiz**, B. Cook, M. Prabhat, S. Bhattacharyya, A. Shrivastava, K. E. Bouchard (2020). Scaling of union of intersections for inference of granger causal networks from observational data. *IEEE International Parallel and Distributed Processing Symposium.* \[[paper](https://doi.org/10.1109/IPDPS47924.2020.00036)\]</li>
 
-<li>
-**T. D. Ruiz** & C. L. Ellison (2020). Spatiotemporally coherent tensor decompositions for the analysis of trajectory data. *Engineer Research and Development Center* ERDC/GRL TN-20-3. \[[technical note](https://erdc-library.erdc.dren.mil/jspui/bitstream/11681/37355/1/ERDC-GRL%20TN-20-3.pdf)\]
-</li>
+<li>**T. D. Ruiz** (2020). Estimation and sparse selection of conditional probability models for vector time series. *Oregon State University.* \[[thesis](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/k0698g13s)\]</li>
 
-<li>
-D. H. Gent, S. Bhattacharyya, **T. D. Ruiz** (2019). Prediction of spread and regional development of hop powdery mildew: a network analysis. *Phytopathology.* \[[paper](https://doi.org/10.1094/PHYTO-12-18-0483-R)\]
-</li>
+<li>**T. D. Ruiz** & C. L. Ellison (2020). Spatiotemporally coherent tensor decompositions for the analysis of trajectory data. *Engineer Research and Development Center* ERDC/GRL TN-20-3. \[[technical note](https://erdc-library.erdc.dren.mil/jspui/bitstream/11681/37355/1/ERDC-GRL%20TN-20-3.pdf)\]</li>
+
+<li>D. H. Gent, S. Bhattacharyya, **T. D. Ruiz** (2019). Prediction of spread and regional development of hop powdery mildew: a network analysis. *Phytopathology.* \[[paper](https://doi.org/10.1094/PHYTO-12-18-0483-R)\]</li>
 
 </ol>
 
@@ -73,8 +59,7 @@ If you're interested in working with me, please get in touch. I often (though no
 
 ### Project ideas
 
-
-#### Permutation inference for functional data 
+#### Permutation inference for functional data
 
 In the functional data analysis setting, responses are continuous functions rather than scalars/vectors. In practice, functional responses are measured at a discrete resolution and must first be estimated using smoothing approximation techniques prior to data analysis. In many studies, high-resolution functional measurements are obtained on relatively few observational/experimental units, with relatively more attention given to the functional sampling resolution than to replication, effectively prioritizing response approximation quality over statistical inference. This project would explore the use of permutation inference for functional data with small sample sizes. Methods would apply permutation alternatives to standard parametric multivariate statistical tests for two-sample inference and analysis of variance to the coefficients of functional principal components. While this idea has been proposed in prior literature, it is relatively under-explored, leaving room for original contributions. The project would investigate, in particular, the impact of functional approximations on statistical power.
 
