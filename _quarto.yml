@@ -9,6 +9,7 @@ website:
   google-analytics: "G-H3YKZX4J88"
   page-navigation: false
   page-footer: "\u00a9 2024 Trevor Ruiz"
+  favicon: 'img/favicon-lwr.png'
   navbar:
     # logo: img/portrait1.jpeg
     background: light
