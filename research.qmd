@@ -7,9 +7,9 @@ date-format: "MMMM YYYY"
 published-title: "Updated"
 ---
 
-I'm interested in statistical methods for correlated and high-dimensional data with applications in life sciences. I also enjoy data analysis and collaborative research projects involving applied statistical modeling.
+I'm interested in statistical methods for correlated and high-dimensional data with applications in life sciences. I also enjoy collaborative research projects involving applied statistical modeling.
 
-I'm eager to include student contributors in my research and aim to work on topics/projects with opportunities for student involvement. My current projects are collaborative and focus on specific applications or data analyses that would be accessible to undergraduate students but also have interesting methodological aspects and therein some potential to expand into projects suitable for graduate-level research.
+I'm eager to include student contributors in my research and aim to work on topics/projects that create opportunities for student involvement. My current projects focus on specific applications or data analyses that would be accessible to undergraduate students but also have interesting methodological aspects and therein some potential to expand into projects suitable for graduate-level research.
 
 ## Current projects
 
