@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 67f8db2b-71d5-454f-8379-3eeb3dd239d5
+      url: 'https://keen-otter-b12399.netlify.app'

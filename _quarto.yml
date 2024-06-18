@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: _site
   resources: 
     - CNAME
 
@@ -24,5 +24,6 @@ format:
     css: styles.css
     toc: true
 
-
+execute:
+  freeze: auto
 
