@@ -11,7 +11,7 @@ My teaching focuses on statistical methods, applied statistics, and data science
 
 ### \[[STAT218](https://stat218.tdruiz.com)\] Applied statistics for life sciences   {#stat218}
 
-*Winter 2024, Spring 2024* 
+*Winter 2024, Spring 2024, Winter 2025, Spring 2025* 
 
 Data collection and experimental design, descriptive statistics, confidence intervals, parametric and non parametric one and two-sample hypothesis tests, analysis of variance, correlation, simple linear regression, chi-square tests. Applications of statistics to the life sciences. Substantial use of statistical software.
 
@@ -23,7 +23,7 @@ Basic probability theory, combinatorial methods, independence, conditional and m
 
 ## UC Santa Barbara
 
-### \[[PSTAT197](https://pstat197.tdruiz.com)\] Data science capstone {#pstat197}
+### \[[PSTAT197](https://pstat197.github.io)\] Data science capstone {#pstat197}
 
 *Winter 2022, Spring 2022, Fall 2022, Winter 2023, Spring 2023*
 
