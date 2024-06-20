@@ -15,15 +15,15 @@ I'm eager to include student contributors in my research and aim to work on topi
 
 #### Using environmental DNA to identify microbial taxa associated with marine mammal abundances
 
-*Collaboration with Erin Satterthwaite, Michaela Alksne, Nastassia Patin, Julie Dinasquet, Brice Semmens, and others.*
+*Collaboration with Erin Satterthwaite, Michaela Alksne, Nastassia Patin, Julie Dinasquet, Brice Semmens, and others (Scripps Institute of Oceanography, UCSD).*
 
-*Student contributors (alphabetical order): Katherine Chan; Gabrielle Low; Nick Patrick; Samantha Ward*
+*Student contributors (alphabetical order): Katherine Chan (MS Statistics); Gabrielle Low (BS Statistics); Nick Patrick (BS Statistics); Samantha Ward (BS Statistics).*
 
 This project leverages environmental metabarcoding data collected from quarterly cruises in the California current to identify microbial and microorganism ‘signatures’ of presence and abundance of large marine mammals. We utilize 16S and 18S r-RNA sequencing data obtained from ocean water samples collected at multiple depths along transects in the California current together with density estimates computed from visual sightings of common whale species along the same transects. We formulate a log-contrast-type model relating species density to relative abundances of amplicon sequence variants (ASVs) after adjusting for seasonality and environmental conditions and develop a sparse estimation procedure to identify small subsets of ASVs associated with changes in species density.
 
 #### Modeling baseline metabolic needs of pregnant rattlesnakes from high resolution time series of body temperatures
 
-*Collaboration with Haley Moniz (Biological Sciences, Cal Poly) and Emily Taylor (Biological Sciences, Cal Poly)*
+*Collaboration with Haley Moniz and Emily Taylor (Biological Sciences, Cal Poly)*
 
 *Student contributors (alphabetical order): Emma Reardon (biology); Nicole Yee (statistics)*
 
@@ -69,7 +69,7 @@ If you're interested in working with me, please get in touch. I often have oppor
 
 ### Student works
 
--   K. G. Chan (2024). Using plankton eDNA to estimate whale abundances off the California coast: data integration and statistical modeling. California Polytechnic State University. \[MS thesis\]
+-   K. G. Chan (2024). Using plankton eDNA to estimate whale abundances off the California coast: data integration and statistical modeling. California Polytechnic State University.
 
 -   S. Rumsey, E. Ho, C. Zheng, N. Setiawan, J. Park, M. Elcheikhali, T. D. Ruiz, A. Kolbeinsson, E. J. Daza (2023). Identifying case onset points for early detection of influenza-like illness. *ACM SIGKDD'23 Southern California Data Science Day.* Poster presentation. \[[abstract](https://drive.google.com/file/d/1mUdp1IfIl41d4oWxOL9ri-ZlG6rz1sf8/view?usp=share_link)\]
 
