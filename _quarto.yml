@@ -8,19 +8,30 @@ website:
   page-navigation: false
   page-footer: "\u00a9 2024 Trevor Ruiz"
   favicon: 'favicon-lwr.png'
+  search: false
+  back-to-top-navigation: true
   navbar:
-    # logo: img/portrait1.jpeg
     background: light
-    search: true
-    left:
-      - teaching.qmd
-      - research.qmd
-
+    right:
+    - text: "{{< fa envelope >}}"
+      href: mailto:truiz01@calpoly.edu
+    - text: "{{< fa calendar-days >}}"
+      href: https://calendly.com/tdruiz
+    - text: "{{< fa location-dot >}}"
+      href: https://maps.app.goo.gl/hsJ5LDByoa3ZfHrj9
+    - text: "{{< ai google-scholar>}}"
+      href: https://scholar.google.com/citations?user=YhlR1RkAAAAJ
+    - text: "{{< ai orcid >}}"
+      href: https://orcid.org/0009-0001-1452-2542
+    - icon: github
+      href: https://github.com/ruizt
+    - text: "{{< ai cv >}}"
+      href: https://tdruiz.com
+    
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
 
 execute:
   freeze: auto
