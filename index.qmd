@@ -1,14 +1,17 @@
 ---
 title: "Trevor D. Ruiz"
 about:
-  id: heading
-  template: broadside
+  id: topmatter
+  template: trestles
   image: img/portrait2.jpg
+  links: 
+    - text: "{{< fa envelope >}} Email"
+      href: mailto:truiz01@calpoly.edu
+    - text: "{{< fa calendar-days >}} Meet"
+      href: https://calendly.com/tdruiz
 ---
 
-### 
-
-:::{#heading}
+:::{#topmatter}
 
 I'm an Assistant Professor in the Statistics Department at Cal Poly SLO. I'm interested in applied statistics, data analysis, collaborative science, and teaching.
 
