@@ -1,14 +1,13 @@
 ---
 title: "Trevor D. Ruiz"
+date: '9/1/2024'
+date-format: 'MMMM YYYY'
+published-title: 'Last updated'
+title-block-style: plain
 about:
   id: topmatter
   template: trestles
   image: img/portrait2.jpg
-  links: 
-    - text: "{{< fa envelope >}} Email"
-      href: mailto:truiz01@calpoly.edu
-    - text: "{{< fa calendar-days >}} Meet"
-      href: https://calendly.com/tdruiz
 ---
 
 :::{#topmatter}
@@ -37,127 +36,53 @@ B.A. Philosophy \| 2007-2011
 
 :::
 
+I work primarily on statistical methods for the analysis of correlated and high-dimensional data in biology and ecology, and I especially enjoy collaborative applied projects in this area.
 
-# Research
+I'm eager to work with student collaborators and most of my agenda is designed with this in mind. If you're interested in working with me, or would like to chat about what that might entail, please get in touch.
 
-I'm interested in statistical methods for correlated and high-dimensional data with applications in life sciences. I also enjoy collaborative projects involving applied statistical modeling.
-
-I'm eager to work with student collaborators and most of my research agenda is designed with this in mind. Often, this entails that my research projects focus on specific applications or data analyses that would be accessible to undergraduate students but also exhibit some methodological complexity potentially suitable for graduate-level research. If you're interested in working with me, our would like to chat about what that might involve, please [get in touch](mailto:truiz01@calpoly.edu).
+The rest of this page represents my most recent work (last 2-3 years) and I typically update it quarterly.
 
 ## Current projects
 
-#### Using environmental DNA (eDNA) metabarcoding to identify microbial correlates of marine mammal abundance
-
-*Collaboration with Erin Satterthwaite and others (Scripps Institute of Oceanography, UCSD)*
-
-*Student collaborators (alphabetical order): Katherine Chan (MS Statistics); Gabrielle Low (BS Statistics); Nick Patrick (BS Statistics); Samantha Ward (BS Statistics)*
-
-This project seeks to identify microbes predictive of the presence and abundance of large marine mammals in the California current. The project utilizes 16S and 18S r-RNA metabarcoding of eDNA obtained from ocean water samples collected at multiple depths along transects in the California current, together with density estimates computed from visual sightings of common whale species recorded along those same transects. We formulate a seasonally-adjusted log-contrast-type model relating density estimates to the relative abundances of amplicon sequence variants (ASVs) and implement a sparse estimation procedure to identify small subsets of ASVs predictive of whale density from 2014-2020.
-
-#### Modeling baseline metabolic needs of pregnant rattlesnakes from high resolution time series of body temperatures
-
-*Collaboration with Haley Moniz and Emily Taylor (Biological Sciences, Cal Poly)*
-
-*Student collaborators (alphabetical order): Emma Reardon (BS Environmental Management & Protection); Nicole Yee (BS Statistics)*
-
-This project seeks to explore the effect of pregnancy on metabolism among rattlesnakes. Beaupre & Duvall (1998) measured oxygen consumption in male, non-pregnant female, and (early) pregnant female rattlesnakes and developed general equations for calculating resting metabolic rate given a snake's body temperature and weight. This project will leverage high-resolution time series of body temperatures collected from pregnant and non-pregnant female rattlesnakes over a period of several months to estimate metabolic rate fluctuations over time using the above-mentioned framework, and develop exploratory and statistical analyses aimed at (1) identifying metabolic differences between pregnant and non-pregnant rattlesnakes and (2) understanding temporal shifts in metabolism associated with seasonal and lifecycle factors.
-
-#### Covariate adjustment in sparse partial least squares models for high-dimensional compositional data
+#### Covariate adjustment and dependent error models in sparse partial least squares for high-dimensional compositional data
 
 *Supported by the Research, Scholarly & Creative Activities Program awarded by the Cal Poly Division of Research*
 
-Many ecological studies collect physical samples of water, soil, or other media in order to extract and sequence environmental DNA (eDNA), and often these samples are co-located space and time with additional survey measurements. Integrating such data provides a potential means of investigating relationships between eDNA composition and ecological and environmental features across space and time, and although there are a variety of statistical methods that capture relationships between compositional (*i.e.,* genomic) and non-compositional (*i.e.,* environmental/physical/biological) variables, few facilitate adjustment of inferred relationships for covariates or dependence among observations due to spatial and temporal sampling patterns, both of which are present among ecological data. This project aims to develop a partial least squares (PLS) framework that explicitly incorporates these adjustments.
+Increasingly, ecological surveys encompass sampling and metabarcoding of environmental DNA from water, soil, and other media. Such data can capture rich networks of ecological relationships and, when combined with traditional survey measurements, can be used to explore relationships between ecological communities. However, many if not most statistical approaches to the analysis of metabarcoding data were originally developed in the context of microbiome studies, in which there is substantially less environmental and spatiotemporal variation across samples. As such, few current methods incorporate covariate adjustments for environmental features or error models accounting for dependence between observations across space and time. This project aims to develop such adjustments in the context of partial least squares -- a common modeling framework for high-dimensional compositional data -- and illustrate their application to ecological data.
 
-## Publications
+## Works in progress and recent publications
 
-*Listed in reverse chronological order.*
+*Listed in reverse chronological order; $\dagger$ indicates student coauthors.*
 
-<ol reversed>
+- E. Reardon$^\dagger$, N. Yee$^\dagger$, **T.D. Ruiz**, H.A. Moniz, E.N. Taylor, S.M. Boback. Effects of reproductive status on standard metabolic rate of the prairie rattlesnake (Crotalus viridis). *In preparation.*
 
-<li>H. A. Moniz, J. H. Buck, H. L. Crowell, S. M. Goetz, **T. D. Ruiz**, S. M. Boback, E. N. Taylor (2024). High thermal quality rookeries facilitate high thermoregulatory accuracy in pregnant female rattlesnakes. *Journal of Thermal Biology.* \[[paper](https://doi.org/10.1016/j.jtherbio.2024.103948)\] </li>
+- E.V. Satterthwaite, **T.D. Ruiz**, K.G. Chan$^\dagger$, N. Patrick$^\dagger$, M. Alksne, N. Patin, J. Dinasquet, R. Lampe, O. Shelton, O., L. Thomas, B. Semmens. Microbial and small plankton indicators of marine mammal abundance. *In preparation.*
 
-<li>**T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson (2023). Sparse estimation of parameter support sets for generalized vector autoregressions by resampling and model aggregation. *Under review.* \[[preprint](https://doi.org/10.48550/arXiv.2307.09684)\]</li>
+- **T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson. Sparse estimation of parameter support sets for generalized vector autoregressions by resampling and model aggregation. *Under review.* \[[preprint](https://doi.org/10.48550/arXiv.2307.09684)\]
 
-<li>**T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson (2022). A graphical sufficient condition for the stability of first-order log-linear Poisson generalized vector autoregressive processes. \[[preprint](https://dx.doi.org/10.2139/ssrn.4283477)\]</li>
+- H. A. Moniz, J. H. Buck, H. L. Crowell, S. M. Goetz, **T. D. Ruiz**, S. M. Boback, E. N. Taylor (2024). High thermal quality rookeries facilitate high thermoregulatory accuracy in pregnant female rattlesnakes. *Journal of Thermal Biology.* \[[paper](https://doi.org/10.1016/j.jtherbio.2024.103948)\] 
 
-<li>A. M. E. Ojwang\', **T. D. Ruiz**, S. Bhattacharyya, S. Chatterjee, P. S. Ojiambo, D. H. Gent (2021). A general framework for spatio-temporal modeling of epidemics with multiple epicenters: application to an aerially dispersed plant pathogen. *Frontiers in Applied Mathematics and Statistics.* \[[paper](https://doi.org/10.3389/fams.2021.721352)\]</li>
+- A. M. E. Ojwang\', **T. D. Ruiz**, S. Bhattacharyya, S. Chatterjee, P. S. Ojiambo, D. H. Gent (2021). A general framework for spatio-temporal modeling of epidemics with multiple epicenters: application to an aerially dispersed plant pathogen. *Frontiers in Applied Mathematics and Statistics.* \[[paper](https://doi.org/10.3389/fams.2021.721352)\]
 
-<li>**T. D. Ruiz**, S. Bhattacharyya, M. Balasubramanian, K. Bouchard (2020). Sparse and low-bias estimation of high dimensional vector autoregressive models. *Proceedings of the 2nd Conference on Learning for Dynamics and Control* in *Proceedings of Machine Learning Research.* \[[paper](https://proceedings.mlr.press/v120/ruiz20a.html)\]</li>
 
-<li>M. Balasubramanian, **T. D. Ruiz**, B. Cook, M. Prabhat, S. Bhattacharyya, A. Shrivastava, K. E. Bouchard (2020). Scaling of union of intersections for inference of granger causal networks from observational data. *IEEE International Parallel and Distributed Processing Symposium.* \[[paper](https://doi.org/10.1109/IPDPS47924.2020.00036)\]</li>
+## Recent courses
 
-<li>**T. D. Ruiz** (2020). Estimation and sparse selection of conditional probability models for vector time series. *Oregon State University.* \[[thesis](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/k0698g13s)\]</li>
+I currently teach courses in probability, applied statistics, and data science. My broader teaching competence includes most areas of statistics at an advanced undergraduate level.
 
-<li>**T. D. Ruiz** & C. L. Ellison (2020). Spatiotemporally coherent tensor decompositions for the analysis of trajectory data. *Engineer Research and Development Center* ERDC/GRL TN-20-3. \[[technical note](https://erdc-library.erdc.dren.mil/jspui/bitstream/11681/37355/1/ERDC-GRL%20TN-20-3.pdf)\]</li>
 
-<li>D. H. Gent, S. Bhattacharyya, **T. D. Ruiz** (2019). Prediction of spread and regional development of hop powdery mildew: a network analysis. *Phytopathology.* \[[paper](https://doi.org/10.1094/PHYTO-12-18-0483-R)\]</li>
+- \[[STAT218](https://stat218.tdruiz.com)\] Applied statistics for life sciences: *Winter 2024, Spring 2024, Winter 2025, Spring 2025* 
+- \[[STAT425](https://stat425.tdruiz.com)\] Probability theory: *Fall 2023, Fall 2024*
+- (UCSB) \[[PSTAT197](https://pstat197.github.io)\] Data science capstone: *Winter 2022, Spring 2022, Fall 2022, Winter 2023, Spring 2023*
+- (UCSB) \[[PSTAT100](https://pstat100.tdruiz.com)\] Data science concepts and analysis: *Spring 2021, Winter 2022, Spring 2022, Spring 2023*
 
-</ol>
-
-## Student work
+## Recent student work
 
 -   K. G. Chan (2024). Using plankton eDNA to estimate whale abundances off the California coast: data integration and statistical modeling. California Polytechnic State University. \[[thesis](https://digitalcommons.calpoly.edu/theses/2863)\]
 
--   S. Rumsey, E. Ho, C. Zheng, N. Setiawan, J. Park, M. Elcheikhali, T. D. Ruiz, A. Kolbeinsson, E. J. Daza (2023). Identifying case onset points for early detection of influenza-like illness. *ACM SIGKDD'23 Southern California Data Science Day.* \[[poster abstract](https://drive.google.com/file/d/1mUdp1IfIl41d4oWxOL9ri-ZlG6rz1sf8/view?usp=share_link)\]
+-   S. Rumsey, E. Ho, C. Zheng, N. Setiawan, J. Park, M. Elcheikhali, T. D. Ruiz, A. Kolbeinsson, E. J. Daza (2023). Identifying case onset points for early detection of influenza-like illness. *ACM SIGKDD'23 Southern California Data Science Day.* \[[abstract](https://drive.google.com/file/d/1mUdp1IfIl41d4oWxOL9ri-ZlG6rz1sf8/view?usp=share_link)\]
 
--   L. Umsted, J. Liu, P. Trujillo, E. Burrell, L. B. Lancheros, T. D. Ruiz, E. Noi, E. Zhou, S. Dodge (2023). Understanding and modeling human mobility response to California wildfires. *Proceedings of 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD’23)* \[[poster abstract](https://par.nsf.gov/servlets/purl/10501109)\]
+-   L. Umsted, J. Liu, P. Trujillo, E. Burrell, L. B. Lancheros, T. D. Ruiz, E. Noi, E. Zhou, S. Dodge (2023). Understanding and modeling human mobility response to California wildfires. *Proceedings of 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD’23)* \[[abstract](https://par.nsf.gov/servlets/purl/10501109)\]
 
--   M. Gupta, A. Adams, E. Satterthwaite, T. D. Ruiz (2022). A scrollytelling primer on hypoxia: developing a data storytelling tool to communicate ocean observing data to California citizens. *CalCOFI Conference 2022: Innovative Techniques and Novel Applications of Time Series Data to Marine Resource Management.* Contributed presentation. \[[data storytelling](https://calcofi.io/hypoxia-story/)\]
+-   M. Gupta, A. Adams, E. Satterthwaite, T. D. Ruiz (2022). A scrollytelling primer on hypoxia: developing a data storytelling tool to communicate ocean observing data to California citizens. *CalCOFI Conference 2022: Innovative Techniques and Novel Applications of Time Series Data to Marine Resource Management.* Contributed presentation. \[[data storytelling project](https://calcofi.io/hypoxia-story/)\]
 
-# Teaching
 
-My teaching focuses on statistical methods, applied statistics, and data science. A full list of courses I've taught follows. For more recent courses, student-facing materials can be found on the course websites. I'm happy to share additional materials for instructional purposes on request.
-
-## Cal Poly
-
-#### \[[STAT218](https://stat218.tdruiz.com)\] Applied statistics for life sciences   {#stat218}
-
-*Winter 2024, Spring 2024, Winter 2025, Spring 2025* 
-
-Data collection and experimental design, descriptive statistics, confidence intervals, parametric and non parametric one and two-sample hypothesis tests, analysis of variance, correlation, simple linear regression, chi-square tests. Applications of statistics to the life sciences. Substantial use of statistical software.
-
-#### \[[STAT425](https://stat425.tdruiz.com)\] Probability theory {#stat425} 
-
-*Fall 2023, Fall 2024*
-
-Basic probability theory, combinatorial methods, independence, conditional and marginal probability, probability models for random phenomena, random variables, probability distributions, distributions of functions of random variables, mathematical expectation, covariance and correlation, conditional expectation.
-
-## UC Santa Barbara
-
-#### \[[PSTAT197](https://pstat197.github.io)\] Data science capstone {#pstat197}
-
-*Winter 2022, Spring 2022, Fall 2022, Winter 2023, Spring 2023*
-
-A preparatory course in data science topics and collaborative research skills (PSTAT197A/CMPSC190DD, offered fall term) and two experiential learning courses in which students work in teams on interdisciplinary projects sponsored by an external partner and advised by a technical specialist (PSTAT197B-C/CMPSC190DE-DF, offered winter and spring terms). Project teams establish a group contract outlining basic agreements pertaining to the collaboration and agree on outputs to produce for the sponsor by the end of the project -- typically software, documentation, and a presentation. The course sequence culminates with a public showcase of student work.
-
-#### \[[PSTAT100](https://pstat100.tdruiz.com)\] Data science concepts and analysis {#pstat100}
-
-*Spring 2021, Winter 2022, Spring 2022, Spring 2023*
-
-A hands-on introduction to data science intended for intermediate-level students from any discipline with some exposure to probability and basic computing skills, but few or no upper-division courses in statistics or computer science. The course introduces central concepts in statistics -- such as sampling variation, uncertainty, and inference -- in an applied setting together with techniques for data exploration and analysis. Applications emphasize end-to-end data analyses.
-
-#### \[PSTAT131/231\] Statistical machine learning {#pstat131}
-
-*Winter 2021, Spring 2021*
-
-Statistical Machine Learning is used to discover patterns and relationships in large data sets. Topics include: data exploration, classification and regression tress, random forests, clustering and association rules, building predictive models focusing on model selection, and model comparison and performance evaluation. Emphasis is on concepts, methods and data analysis, and students are expected to complete a significant class project, individual or team based, using real-world data.
-
-#### \[PSTAT126\] Regression analysis  {#pstat126}
-
-*Summer 2021, Fall 2021*
-
-A first course in linear regression for statistics majors covering both theory and applications with a strong emphasis on statistical computing and visualization techniques in R using tidyverse programming. Tools for reproducible analysis are also introduced. The course covers the linear model in matrix form, parameter estimation and interpretation, residual diagnostics, statistical inference, case influence statistics and outlier detection, common data transformations, categorical variables and interaction terms, and model selection and prediction.
-
-#### \[PSTAT120B\] Probability and statistics  {#pstat120b}
-
-*Fall 2020, Winter 2021, Summer 2021, Fall 2021*
-
-Distribution of sample mean and sample variance; t, chi-squared and F distributions; summarizing data by statistics and graphs; estimation theory for single samples: sufficiency, efficiency, consistency, method of moments, maximum likelihood; hypothesis testing: likelihood ratio test; confidence intervals.
-
-## Oregon State University
-
-#### \[ST351-352\] Introduction to statistical methods {#st351-352}
-
-*Spring 2018, Summer 2018*
-
-Study designs, descriptive statistics, collecting and recording data, probability distributions, sampling distributions for means and proportions, hypothesis testing and confidence intervals for means and proportions in one- and two-sample inference, and chi-square tests. 

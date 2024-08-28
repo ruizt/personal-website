@@ -13,6 +13,10 @@ website:
     # title: false
     collapse: false
     left: 
+      - text: "{{< fa envelope >}}"
+        href: mailto:truiz01@calpoly.edu
+      # - text: "{{< fa calendar-days >}}"
+      #   href: https://calendly.com/tdruiz
       - text: "{{< ai google-scholar>}}"
         href: https://scholar.google.com/citations?user=YhlR1RkAAAAJ
       - text: "{{< ai orcid >}}"
@@ -20,7 +24,7 @@ website:
       - icon: github
         href: https://github.com/ruizt
       - text: "{{< ai cv >}}"
-        href: https://tdruiz.com
+        href: https://drive.google.com/file/d/1RFzVbFxeWnh4I1KTCbRXbI-RCQD0W9Xp/view?usp=sharing
       
     
 format:
