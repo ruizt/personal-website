@@ -36,6 +36,8 @@ B.A. Philosophy \| 2007-2011
 
 :::
 
+## About
+
 I work primarily on statistical methods for the analysis of correlated and high-dimensional data in biology and ecology, and I especially enjoy collaborative applied projects in this area.
 
 I'm eager to work with student collaborators and most of my agenda is designed with this in mind. If you're interested in working with me, or would like to chat about what that might entail, please get in touch.
