@@ -1,8 +1,8 @@
 ---
 title: "Trevor D. Ruiz"
-date: '9/1/2024'
-date-format: 'MMMM YYYY'
-published-title: 'Last site update'
+# date: '9/1/2024'
+# date-format: 'MMMM YYYY'
+# published-title: 'Last site update'
 title-block-style: plain
 about:
   id: topmatter
@@ -56,7 +56,7 @@ Increasingly, ecological surveys encompass sampling and metabarcoding of environ
 
 *Listed in reverse chronological order; $\dagger$ indicates student coauthors.*
 
-- E. Reardon$^\dagger$, N. Yee$^\dagger$, **T.D. Ruiz**, H.A. Moniz, E.N. Taylor, S.M. Boback. Effects of reproductive status on standard metabolic rate of the prairie rattlesnake (Crotalus viridis). *In preparation.*
+- E.M. Reardon$^\dagger$, N.E. Yee$^\dagger$, **T.D. Ruiz**, H.A. Moniz, S.M. Boback, E.N. Taylor. Effects of reproductive status on standard metabolic rate of the prairie rattlesnake (Crotalus viridis) at high elevation site with a short active season. *In preparation.*
 
 - E.V. Satterthwaite, **T.D. Ruiz**, K.G. Chan$^\dagger$, N. Patrick$^\dagger$, M. Alksne, N. Patin, J. Dinasquet, R. Lampe, O. Shelton, O., L. Thomas, B. Semmens. Microbial and small plankton indicators of marine mammal abundance. *In preparation.*
 
