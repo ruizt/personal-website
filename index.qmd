@@ -62,7 +62,7 @@ Increasingly, ecological surveys encompass sampling and metabarcoding of environ
 
 - **T. D. Ruiz**, S. Bhattacharyya, S. C. Emerson. Sparse estimation of parameter support sets for generalized vector autoregressions by resampling and model aggregation. *Under review.* \[[preprint](https://doi.org/10.48550/arXiv.2307.09684)\]
 
-- H. A. Moniz, J. H. Buck, H. L. Crowell, S. M. Goetz, **T. D. Ruiz**, S. M. Boback, E. N. Taylor (2024). High thermal quality rookeries facilitate high thermoregulatory accuracy in pregnant female rattlesnakes. *Journal of Thermal Biology.* \[[paper](https://doi.org/10.1016/j.jtherbio.2024.103948)\] 
+- H. A. Moniz, J. H. Buck, H. L. Crowell, S. M. Goetz, **T. D. Ruiz**, S. M. Boback, E. N. Taylor (2024). High thermal quality rookeries facilitate high thermoregulatory accuracy in pregnant female rattlesnakes. *Journal of Thermal Biology.* \[[paper](https://doi.org/10.1016/j.jtherbio.2024.103948)\] \[[data](https://doi.org/10.5281/zenodo.13177060)\] \[[code](https://github.com/ruizt/viridis)\]
 
 - A. M. E. Ojwang\', **T. D. Ruiz**, S. Bhattacharyya, S. Chatterjee, P. S. Ojiambo, D. H. Gent (2021). A general framework for spatio-temporal modeling of epidemics with multiple epicenters: application to an aerially dispersed plant pathogen. *Frontiers in Applied Mathematics and Statistics.* \[[paper](https://doi.org/10.3389/fams.2021.721352)\]
 
